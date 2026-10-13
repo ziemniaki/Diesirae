@@ -1,0 +1,2834 @@
+<!DOCTYPE html>
+<html lang="en"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxMTY2MDUxMDQxMzc2MTY1ODYxMCIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2Q1MTFmYTZmZWU5M2UzNDFfaW5kZXguaHRtbC04MzEifSwiZXhwIjoxNzkxOTIzNjk1LCJpYXQiOjE3OTE5MjAwOTUsImFsZyI6IlJTMjU2In0.ji2iBowLOdr4heiMfXabS4lLiGYgOthbAUnnC4SCkQPvaxZz5q8OmLklcFwMIDkTYjjBXRPfs3aFupAiZnsboXuVEj9R9lokEXfcGjCJau74ozEvCijw2cl_xaAKTdWYrsXCre9R11LAOzJnXPqaGU0OD2T_BMwCx76PDTEVQGh8V0akzF1xPvcSbCY9ZgMxYNdTpWzgLvBcSgdN97rTq3dWwbmnNBqh2x0JoZc9ryJgktXZvZ15Ju8hSzRSyBWyCwt58oL8AQym1U66z9mT4HfKvoQ98dvdA3PZ5uLRyDnDqXSni6CszQJft9N5hLiQlqUWKpDcA-2MIrHziR0big","c_d511fa6fee93e341_index.html-831")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var c=n;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&b!=null&&h(c,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(d){return a.next(d)}function c(d){return a.throw(d)}return new Promise(function(d,e){function f(g){g.done?d(g.value):Promise.resolve(g.value).then(b,c).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var c=[],d;for(d in b)Object.prototype.hasOwnProperty.call(b,d)&&c.push(b[d]);return c}});p("Array.prototype.includes",function(a){return a?a:function(b,c){var d=this;d instanceof String&&(d=String(d));var e=d.length;c=c||0;for(c<0&&(c=Math.max(c+e,0));c<e;c++){var f=d[c];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){var c=a.style;b.backgroundColor&&(c.backgroundColor=b.backgroundColor);b.width&&(c.width=`${b.width}px`);b.height&&(c.height=`${b.height}px`);var d=b.style;d!=null&&Object.keys(d).forEach(e=>{c[e]=d[e]})};var v=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let c=0,d=a.length;c<d;c++)b.push(a[c]);return b}let x=null;function y(a={}){return x?x:a.u?x=a.u:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var c;if(!(c=b.width)){c=z(a,"border-left-width");var d=z(a,"border-right-width");c=a.clientWidth+c+d}(b=b.height)||(b=z(a,"border-top-width"),d=z(a,"border-bottom-width"),b=a.clientHeight+b+d);return{width:c,height:b}}function B(a){return new Promise((b,c)=>{var d=new Image;d.onload=()=>{d.decode().then(()=>{requestAnimationFrame(()=>b(d))})};d.onerror=c;d.crossOrigin="anonymous";d.decoding="async";d.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,c){return t(function*(){var d=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");d.setAttribute("width",`${b}`);d.setAttribute("height",`${c}`);d.setAttribute("viewBox",`0 0 ${b} ${c}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");d.appendChild(e);e.appendChild(a);return C(d)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(c=>{var d=a.getPropertyValue(c),e=a.getPropertyPriority(c);return`${c}: ${d}${e?" !important":""};`}).join(" ")}
+function G(a,b,c,d){a=window.getComputedStyle(a,c);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;c=`.${f}:${c}`;a.cssText?(d=a.getPropertyValue("content"),d=`${a.cssText} content: '${d.replace(/'|"/g,"")}';`):d=F(a,d);g.call(e,document.createTextNode(`${c}{${d}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,c){return t(function*(){var d=yield fetch(a,b);if(d.status===404)throw Error(`Resource "${d.url}" not found`);var e=yield d.blob();return new Promise((f,g)=>{var k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(c({v:d,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function aa(a,b,c){var d=a.replace(/\?.*/,"");c&&(d=a);/ttf|otf|eot|woff2?/i.test(d)&&(d=d.replace(/.*\//,""));return b?`[${b}]${d}`:d}
+function K(a,b,c){return t(function*(){var d=aa(a,b,c.F);if(J[d]!=null)return J[d];c.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield I(a,c.l,({v:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=c.o||""}return J[d]=e})};const L={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function M(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function ba(a){return t(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function ca(a,b){return t(function*(){if(a.currentSrc){var c=document.createElement("canvas");let d=c.getContext("2d");c.width=a.clientWidth;c.height=a.clientHeight;d==null||d.drawImage(a,0,0,c.width,c.height);c=c.toDataURL();return B(c)}c=a.poster;c=yield K(c,L[M(c).toLowerCase()]||"",b);return B(c)})}
+function da(a,b){return t(function*(){try{let c;if(a==null?0:(c=a.contentDocument)==null?0:c.body)return yield N(a.contentDocument.body,b,!0)}catch(c){}return a.cloneNode(!1)})}function ea(a,b){return t(function*(){return E(a,HTMLCanvasElement)?ba(a):E(a,HTMLVideoElement)?ca(a,b):E(a,HTMLIFrameElement)?da(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function fa(a,b,c){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var d=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)d=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))d=w(a.contentDocument.body.childNodes);else{let f;d=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(d.length===0||E(a,HTMLVideoElement))return b;yield d.reduce((e,f)=>e.then(()=>N(f,c)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ha(a,b,c){var d=b.style;if(d){var e=window.getComputedStyle(a);e.cssText?(d.cssText=e.cssText,d.transformOrigin=e.transformOrigin):y(c).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);d.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ia(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(c=>a.value===c.getAttribute("value")))&&b.setAttribute("selected","")}
+function ja(a,b){return t(function*(){var c=a.querySelectorAll?a.querySelectorAll("use"):[];if(c.length===0)return a;var d={};for(var e=0;e<c.length;e++){var f=c[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||d[f]||(d[f]=yield N(g,b,!0))}}c=Object.values(d);if(c.length){d=document.createElementNS("http://www.w3.org/1999/xhtml","svg");d.setAttribute("xmlns","http://www.w3.org/1999/xhtml");d.style.position="absolute";d.style.width="0";d.style.height="0";
+d.style.overflow="hidden";d.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");d.appendChild(e);for(f=0;f<c.length;f++)e.appendChild(c[f]);a.appendChild(d)}return a})}
+function N(a,b,c){return t(function*(){return c||!b.filter||b.filter(a)?Promise.resolve(a).then(d=>ea(d,b)).then(d=>fa(a,d,b)).then(d=>{E(d,Element)&&(ha(a,d,b),G(a,d,":before",b),G(a,d,":after",b),E(a,HTMLTextAreaElement)&&(d.textContent=a.value),E(a,HTMLInputElement)&&d.setAttribute("value",a.value),ia(a,d));return d}).then(d=>ja(d,b)):null})};const O=/url\((['"]?)([^'"]+?)\1\)/g,ka=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,la=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ma(a){var b=[];a.replace(O,(c,d,e)=>{b.push(e);return c});return b.filter(c=>!H(c))}
+function na(a,b,c,d){return t(function*(){try{let e=c?(new URL(b,c||void 0)).toString():b,f;f=yield K(e,L[M(b).toLowerCase()]||"",d);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function oa(a,{K:b}){return b?a.replace(la,c=>{for(;;){let [d,,e]=ka.exec(c)||[];if(!e)return"";if(e===b)return`src: ${d};`}}):a}
+function P(a,b,c){return t(function*(){if(a.search(O)===-1)return a;var d=oa(a,c);return ma(d).reduce((e,f)=>e.then(g=>na(g,f,b,c)),Promise.resolve(d))})};function Q(a,b,c){return t(function*(){var d,e=(d=b.style)==null?void 0:d.getPropertyValue(a);return e?(d=yield P(e,null,c),b.style.setProperty(a,d,b.style.getPropertyPriority(a)),!0):!1})}function pa(a,b){return t(function*(){(yield Q("background",a,b))||(yield Q("background-image",a,b));(yield Q("mask",a,b))||(yield Q("-webkit-mask",a,b))||(yield Q("mask-image",a,b))||(yield Q("-webkit-mask-image",a,b))})}
+function qa(a,b){return t(function*(){var c=E(a,HTMLImageElement);if(c&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var d=c?a.src:a.href.baseVal,e=yield K(d,L[M(d).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...k)=>{try{f(b.h(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");c?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function ra(a,b){return t(function*(){var c=w(a.childNodes).map(d=>R(d,b));yield Promise.all(c).then(()=>a)})}function R(a,b){return t(function*(){E(a,Element)&&(yield pa(a,b),yield qa(a,b),yield ra(a,b))})};const S={};function T(a){return t(function*(){var b=S[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return S[a]=b})}function U(a,b){return t(function*(){var c=a.cssText,d=/url\(["']?([^"')]+)["']?\)/g,e=(c.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){var g=f.replace(d,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.l,({result:k})=>{c=c.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>c)})}
+function V(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var c=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var d=c.exec(a);if(d===null)break;b.push(d[0])}a=a.replace(c,"");c=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(d=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=c.exec(a);if(e===null)if(e=d.exec(a),e===null)break;else c.lastIndex=d.lastIndex;else d.lastIndex=
+c.lastIndex;b.push(e[0])}return b}
+function sa(a,b){return t(function*(){var c=[],d=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=T(f.href).then(m=>U(m,b)).then(m=>V(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Fa){}})).catch(()=>{});d.push(f)}})}catch(f){let g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&d.push(T(e.href).then(k=>U(k,b)).then(k=>V(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(d).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{c.push(f)})}catch(f){}});return c})})}function ta(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(O)!==-1)}function ua(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var c=w(a.ownerDocument.styleSheets);c=yield sa(c,b);return ta(c)})}
+function va(a){function b(d){(d.style.fontFamily||getComputedStyle(d).fontFamily).split(",").forEach(e=>{c.add(e.trim().replace(/["']/g,""))});Array.from(d.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var c=new Set;b(a);return c}function wa(a,b){return t(function*(){var c=yield ua(a,b),d=va(a);return(yield Promise.all(c.filter(e=>d.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>P(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function xa(a,b){return t(function*(){var c=b.m!=null?b.m:b.A?null:yield wa(a,b);if(c){let d=document.createElement("style");d.appendChild(document.createTextNode(c));a.firstChild?a.insertBefore(d,a.firstChild):a.appendChild(d)}})};function ya(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield N(a,b,!0);yield xa(e,b);yield R(e,b);u(e,b);return yield D(e,c,d)})}
+function za(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield ya(a,b);e=yield B(e);var f=document.createElement("canvas"),g=f.getContext("2d"),k=b.I||window.devicePixelRatio||1,m=b.j||c,q=b.i||d;f.width=m*k;f.height=q*k;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Aa(a,b={}){return t(function*(){return(yield za(a,b)).toDataURL()})};const Ba=["gemini.google.com","corp.google.com","proxy.googlers.com"];function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var c=document.createElement("canvas");c.width=a;c.height=b;return c.toDataURL("image/png")}const Y=X(1,1);
+function Z(a){return t(function*(){try{return yield Aa(a,{j:a.offsetWidth,i:a.offsetHeight,A:!0,filter:b=>{if(b.tagName==="IMG"){let c=b.getAttribute("src");if(!c||c.trim()===""||b.style.display==="none")return!1}return!0},o:Y,h:()=>Y})}catch(b){return X(a.offsetWidth,a.offsetHeight)}})}
+function Ca(){return t(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,c=document.body.cloneNode(!0);c.querySelectorAll('[class*="animate"]').forEach(d=>{d.classList.remove(...Array.from(d.classList).filter(e=>e.startsWith("animate")))});c.style.width=`${a}px`;c.style.height=`${b}px`;return c})}
+function Da(a){return t(function*(){var b=document.body;if(W()){var c=yield Ca();b=c;document.body.appendChild(c)}c=yield Z(b);W()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:c,topOffset:document.documentElement.scrollTop},a.origin)})}function Ea(a){return t(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(Ba.some(c=>a.origin.includes(c))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Da(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ea(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.j=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.i="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#050308">
+  <title>DIES IRAE // THE LAST JUDGMENT VR</title>
+
+  <!-- Tailwind CSS & Google Fonts for Gothic Surrealist Typography -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&amp;family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=JetBrains+Mono:wght@300;400&amp;display=swap" rel="stylesheet">
+
+  <!-- Three.js r128 CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" crossorigin="anonymous"></script>
+
+  <style>
+    :root {
+      --gold: #d4af37;
+      --gold-bright: #ffdf73;
+      --crimson: #8b1e24;
+      --abyss: #050308;
+    }
+
+    * {
+      box-sizing: border-box;
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #040207;
+      color: #e8dcc4;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      touch-action: none;
+    }
+
+    .font-cinzel {
+      font-family: 'Cinzel Decorative', serif;
+    }
+
+    .font-mono-tech {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    #webgl-container {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Stereoscopic Cardboard Overlay (Center Divider, Alignment Notch & Barrel Vignette) */
+    #stereo-overlay {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 10;
+      display: none;
+    }
+
+    #stereo-overlay.active {
+      display: block;
+    }
+
+    .stereo-eye-mask {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      background: radial-gradient(
+        circle at var(--eye-center-x, 50%) 50%,
+        transparent 58%,
+        rgba(4, 2, 7, 0.35) 74%,
+        rgba(2, 1, 4, 0.92) 90%,
+        #020104 100%
+      );
+    }
+
+    #left-eye-mask {
+      left: 0;
+      --eye-center-x: 52%;
+    }
+
+    #right-eye-mask {
+      right: 0;
+      --eye-center-x: 48%;
+    }
+
+    .stereo-divider {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      transform: translateX(-50%);
+      background: linear-gradient(
+        to bottom,
+        rgba(212, 175, 55, 0.55),
+        rgba(212, 175, 55, 0.18) 20%,
+        rgba(212, 175, 55, 0.18) 80%,
+        rgba(212, 175, 55, 0.55)
+      );
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.95);
+    }
+
+    .stereo-notch-top, .stereo-notch-bottom {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 18px;
+      height: 18px;
+      border: 1.5px solid rgba(212, 175, 55, 0.65);
+    }
+
+    .stereo-notch-top {
+      top: 8px;
+      border-bottom: none;
+    }
+
+    .stereo-notch-bottom {
+      bottom: 8px;
+      border-top: none;
+    }
+
+    /* Entry Portal Styling */
+    #entry-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 40;
+      background: radial-gradient(circle at 50% 35%, rgba(28, 12, 36, 0.72) 0%, rgba(7, 4, 12, 0.92) 65%, rgba(3, 1, 6, 0.98) 100%);
+      backdrop-filter: blur(8px);
+      transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.9s;
+    }
+
+    #entry-modal.hidden-modal {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .gothic-card {
+      background: linear-gradient(165deg, rgba(16, 10, 24, 0.92) 0%, rgba(8, 5, 13, 0.96) 100%);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.95),
+        0 0 50px rgba(139, 30, 36, 0.2),
+        inset 0 0 30px rgba(212, 175, 55, 0.07);
+    }
+
+    .btn-gothic-primary {
+      background: linear-gradient(135deg, rgba(168, 126, 35, 0.3) 0%, rgba(92, 22, 28, 0.5) 100%);
+      border: 1px solid rgba(235, 195, 84, 0.65);
+      color: #fff3d1;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.2), inset 0 0 15px rgba(212, 175, 55, 0.15);
+    }
+
+    .btn-gothic-primary:hover, .btn-gothic-primary:active {
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.5) 0%, rgba(139, 30, 36, 0.7) 100%);
+      border-color: #ffe89e;
+      box-shadow: 0 0 35px rgba(212, 175, 55, 0.45), inset 0 0 20px rgba(255, 223, 115, 0.3);
+      transform: translateY(-1px);
+    }
+
+    .btn-gothic-secondary {
+      background: rgba(18, 13, 28, 0.8);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      color: #dfd0b2;
+      transition: all 0.25s ease;
+    }
+
+    .btn-gothic-secondary:hover, .btn-gothic-secondary:active {
+      background: rgba(212, 175, 55, 0.15);
+      border-color: rgba(212, 175, 55, 0.75);
+      color: #fff5dc;
+    }
+
+    /* Auto-Hiding HUD */
+    #vr-hud {
+      position: fixed;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 30;
+      transition: opacity 0.45s ease, transform 0.45s ease;
+      max-width: 96vw;
+    }
+
+    #vr-hud.hud-hidden {
+      opacity: 0;
+      transform: translateX(-50%) translateY(16px);
+      pointer-events: none;
+    }
+
+    /* Custom Range Slider */
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      background: rgba(212, 175, 55, 0.2);
+      height: 4px;
+      border-radius: 2px;
+      outline: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #ffdf73;
+      border: 1px solid #4a2f08;
+      cursor: pointer;
+      box-shadow: 0 0 8px rgba(255, 223, 115, 0.9);
+    }
+
+    @keyframes pulseSlow {
+      0%, 100% { opacity: 0.65; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.04); }
+    }
+
+    .sigil-spin {
+      animation: spinSlow 48s linear infinite;
+    }
+
+    @keyframes spinSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.left-1\/2{left:50%}.top-3{top:0.75rem}.z-30{z-index:30}.mx-auto{margin-left:auto;margin-right:auto}.my-auto{margin-top:auto;margin-bottom:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mt-5{margin-top:1.25rem}.block{display:block}.flex{display:flex}.grid{display:grid}.h-2{height:0.5rem}.h-20{height:5rem}.h-3\.5{height:0.875rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-full{height:100%}.w-16{width:4rem}.w-2{width:0.5rem}.w-20{width:5rem}.w-3\.5{width:0.875rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-full{width:100%}.max-w-md{max-width:28rem}.max-w-xl{max-width:36rem}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes ping{75%, 100%{transform:scale(2);opacity:0}}.animate-ping{animation:ping 1s cubic-bezier(0, 0, 0.2, 1) infinite}.cursor-pointer{cursor:pointer}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-t{border-top-width:1px}.border-amber-500\/10{border-color:rgb(245 158 11 / 0.1)}.border-amber-500\/20{border-color:rgb(245 158 11 / 0.2)}.border-amber-500\/30{border-color:rgb(245 158 11 / 0.3)}.border-amber-500\/40{border-color:rgb(245 158 11 / 0.4)}.bg-amber-300{--tw-bg-opacity:1;background-color:rgb(252 211 77 / var(--tw-bg-opacity, 1))}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.bg-amber-950\/20{background-color:rgb(69 26 3 / 0.2)}.bg-black\/45{background-color:rgb(0 0 0 / 0.45)}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-black\/65{background-color:rgb(0 0 0 / 0.65)}.p-1\.5{padding:0.375rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.tracking-\[0\.28em\]{letter-spacing:0.28em}.tracking-\[0\.35em\]{letter-spacing:0.35em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-amber-100{--tw-text-opacity:1;color:rgb(254 243 199 / var(--tw-text-opacity, 1))}.text-amber-100\/70{color:rgb(254 243 199 / 0.7)}.text-amber-100\/80{color:rgb(254 243 199 / 0.8)}.text-amber-200\/60{color:rgb(253 230 138 / 0.6)}.text-amber-200\/90{color:rgb(253 230 138 / 0.9)}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-300\/90{color:rgb(252 211 77 / 0.9)}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-amber-400\/80{color:rgb(251 191 36 / 0.8)}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.underline-offset-4{text-underline-offset:4px}.opacity-0{opacity:0}.shadow-\[0_0_18px_\#ffdf73\]{--tw-shadow:0 0 18px #ffdf73;--tw-shadow-colored:0 0 18px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.drop-shadow-\[0_2px_15px_rgba\(212\2c 175\2c 55\2c 0\.4\)\]{--tw-drop-shadow:drop-shadow(0 2px 15px rgba(212,175,55,0.4));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-500{transition-duration:500ms}.hover\:text-amber-100:hover{--tw-text-opacity:1;color:rgb(254 243 199 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:w-20{width:5rem}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:gap-3{gap:0.75rem}.sm\:p-8{padding:2rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}}</style></head>
+<body>
+
+  <div id="webgl-container"><canvas width="750" height="1330" style="display: block; width: 375px; height: 665px;"></canvas></div>
+
+  <!-- Stereoscopic Side-By-Side Barrel Vignette & Cardboard Alignment Overlay -->
+  <div id="stereo-overlay">
+    <div id="left-eye-mask" class="stereo-eye-mask" style="--eye-center-x: 50%;"></div>
+    <div id="right-eye-mask" class="stereo-eye-mask" style="--eye-center-x: 50%;"></div>
+    <div class="stereo-divider"></div>
+    <div class="stereo-notch-top"></div>
+    <div class="stereo-notch-bottom"></div>
+  </div>
+
+  <!-- Subtle Top Status Pill (Gaze Telemetry & Quick HUD Toggle) -->
+  <div id="top-bar" class="fixed top-3 left-1/2 -translate-x-1/2 z-30 flex items-center gap-3 px-4 py-1.5 rounded-full bg-black/65 border border-amber-500/30 backdrop-blur-md text-xs tracking-widest uppercase font-mono-tech transition-opacity duration-500 opacity-0 pointer-events-none">
+    <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+    <span id="gaze-status-text" class="text-amber-200/90">SANCTUM SIGIL // GAZE TO AWAKEN MONUMENTS</span>
+  </div>
+
+  <div id="entry-modal" class="flex items-center justify-center p-4 overflow-y-auto">
+    <div class="gothic-card relative max-w-xl w-full rounded-2xl p-6 sm:p-8 text-center my-auto">
+      <!-- Sacred Geometry SVG Header Emblem -->
+      <div class="relative w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+        <svg class="w-full h-full sigil-spin text-amber-400/80" viewBox="0 0 100 100" fill="none">
+          <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3"></circle>
+          <circle cx="50" cy="50" r="38" stroke="currentColor" stroke-width="1.2"></circle>
+          <polygon points="50,6 91,75 9,75" stroke="currentColor" stroke-width="1" fill="none"></polygon>
+          <polygon points="50,94 91,25 9,25" stroke="currentColor" stroke-width="1" fill="none"></polygon>
+          <circle cx="50" cy="50" r="14" stroke="#ffdf73" stroke-width="1.5"></circle>
+        </svg>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-3.5 h-3.5 rounded-full bg-amber-300 shadow-[0_0_18px_#ffdf73]"></div>
+        </div>
+      </div>
+
+      <p class="font-mono-tech text-[11px] tracking-[0.35em] text-amber-400/80 uppercase mb-1">
+        Esoteric WebGL Cathedral // Stereoscopic 360° Experience
+      </p>
+      <h1 class="font-cinzel text-2xl sm:text-4xl font-bold tracking-wider text-amber-100 drop-shadow-[0_2px_15px_rgba(212,175,55,0.4)] mb-2">
+        DIES IRAE
+      </h1>
+      <h2 class="font-cinzel text-xs sm:text-sm tracking-[0.28em] text-amber-300/90 uppercase mb-4">
+        The Last Judgment VR
+      </h2>
+
+      <p class="text-sm sm:text-base text-amber-100/80 italic leading-relaxed max-w-md mx-auto mb-6">
+        “Suspended upon the Sigil of Glass between the Empyrean Rose and the Maw of Gehenna. Gaze upon the Seven Trumpeters, the Hyper-Seraph Ophanim, and the Scales of Cosmic Weighing.”
+      </p>
+
+      <!-- Cardinal Architecture Legend -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-left text-xs bg-black/45 border border-amber-500/20 rounded-xl p-3 mb-6 font-mono-tech">
+        <div class="p-1.5 rounded bg-amber-950/20 border border-amber-500/10">
+          <span class="text-amber-400 block font-semibold">NORTH (-Z)</span>
+          <span class="text-amber-100/70 text-[11px]">Ophanim &amp; Scales</span>
+        </div>
+        <div class="p-1.5 rounded bg-amber-950/20 border border-amber-500/10">
+          <span class="text-amber-400 block font-semibold">EAST / WEST</span>
+          <span class="text-amber-100/70 text-[11px]">7 Brazen Trumpeters</span>
+        </div>
+        <div class="p-1.5 rounded bg-amber-950/20 border border-amber-500/10">
+          <span class="text-amber-400 block font-semibold">SOUTH (+Z)</span>
+          <span class="text-amber-100/70 text-[11px]">Shattered Clepsydra</span>
+        </div>
+        <div class="p-1.5 rounded bg-amber-950/20 border border-amber-500/10">
+          <span class="text-amber-400 block font-semibold">ZENITH (+Y)</span>
+          <span class="text-amber-100/70 text-[11px]">Eye of the Empyrean</span>
+        </div>
+        <div class="p-1.5 rounded bg-amber-950/20 border border-amber-500/10">
+          <span class="text-amber-400 block font-semibold">NADIR (-Y)</span>
+          <span class="text-amber-100/70 text-[11px]">Sea of Dark Mercury</span>
+        </div>
+        <div class="p-1.5 rounded bg-amber-950/20 border border-amber-500/10">
+          <span class="text-amber-400 block font-semibold">GAZE (1.0s)</span>
+          <span class="text-amber-100/70 text-[11px]">Awakens Judgment</span>
+        </div>
+      </div>
+
+      <!-- Primary Entry Buttons -->
+      <div class="flex flex-col gap-3">
+        <button id="btn-enter-vr" class="btn-gothic-primary w-full py-3.5 px-5 rounded-xl font-cinzel text-sm sm:text-base font-bold tracking-widest uppercase flex items-center justify-center gap-3">
+          <!-- Cardboard Headset SVG -->
+          <svg class="w-6 h-6 text-amber-300 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <rect x="2" y="6" width="20" height="12" rx="3"></rect>
+            <circle cx="8" cy="12" r="2.5"></circle>
+            <circle cx="16" cy="12" r="2.5"></circle>
+            <path d="M10.5 18L12 15.5L13.5 18"></path>
+          </svg>
+          <span>Enter Cardboard VR (Stereo + Gyro)</span>
+        </button>
+
+        <button id="btn-enter-mono" class="btn-gothic-secondary w-full py-3 px-5 rounded-xl font-cinzel text-xs sm:text-sm font-semibold tracking-widest uppercase flex items-center justify-center gap-2.5">
+          <svg class="w-5 h-5 text-amber-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <circle cx="12" cy="12" r="9"></circle>
+            <ellipse cx="12" cy="12" rx="4" ry="9"></ellipse>
+            <path d="M3 12h18"></path>
+          </svg>
+          <span>Enter Immersive Mono (360° Preview)</span>
+        </button>
+      </div>
+
+      <div class="mt-5 pt-4 border-t border-amber-500/20 flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono-tech text-amber-200/60">
+        <span>AUDIO: GENERATIVE PIPE ORGAN &amp; BRASS</span>
+        <button id="btn-download-entry" class="text-amber-300 hover:text-amber-100 underline underline-offset-4 cursor-pointer">
+          Download Single-File .HTML for GitHub
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="vr-hud" class="hud-hidden">
+    <div class="gothic-card rounded-2xl px-3.5 py-2.5 flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs font-mono-tech border border-amber-500/40 backdrop-blur-md">
+      <!-- Mode Toggle -->
+      <button id="hud-btn-mode" class="btn-gothic-secondary px-3 py-1.5 rounded-lg uppercase tracking-wider text-[11px] flex items-center gap-1.5">
+        <span id="hud-mode-label">MODE: MONO</span>
+      </button>
+
+      <!-- IPD Slider -->
+      <div class="flex items-center gap-2 bg-black/50 px-2.5 py-1 rounded-lg border border-amber-500/20">
+        <label for="hud-ipd-slider" class="text-[10px] text-amber-300/90 uppercase tracking-wider">IPD</label>
+        <input id="hud-ipd-slider" type="range" min="50" max="76" step="1" value="64" class="w-16 sm:w-20">
+        <span id="hud-ipd-value" class="text-[10px] text-amber-100 w-8 text-right">64mm</span>
+      </div>
+
+      <!-- Recenter Gaze -->
+      <button id="hud-btn-recenter" class="btn-gothic-secondary px-2.5 py-1.5 rounded-lg uppercase tracking-wider text-[11px]" title="Recenter Forward Horizon">
+        Recenter
+      </button>
+
+      <!-- Audio Mute/Unmute -->
+      <button id="hud-btn-audio" class="btn-gothic-secondary px-2.5 py-1.5 rounded-lg uppercase tracking-wider text-[11px]">
+        Audio: ON
+      </button>
+
+      <!-- Sound Dies Irae Horn -->
+      <button id="hud-btn-horn" class="btn-gothic-secondary px-2.5 py-1.5 rounded-lg uppercase tracking-wider text-[11px] text-amber-300">
+        Sound Horn
+      </button>
+
+      <!-- Fullscreen -->
+      <button id="hud-btn-fs" class="btn-gothic-secondary px-2.5 py-1.5 rounded-lg uppercase tracking-wider text-[11px]">
+        Fullscreen
+      </button>
+
+      <!-- Download HTML for GitHub Pages -->
+      <button id="hud-btn-download" class="btn-gothic-primary px-2.5 py-1.5 rounded-lg uppercase tracking-wider text-[11px]" title="Save self-contained index.html">
+        Save .HTML
+      </button>
+    </div>
+  </div>
+
+  <script>
+    const STATE = {
+      started: false,
+      stereoMode: false,
+      ipdMm: 64,
+      audioEnabled: true,
+      gyroAvailable: false,
+      gyroPermissionGranted: false,
+      screenOrientationAngle: 0,
+      hudVisible: false,
+      hudTimeout: null,
+      // Camera orientation state
+      yaw: 0,
+      pitch: 0.08,
+      targetYaw: 0,
+      targetPitch: 0.08,
+      gyroYawOffset: 0,
+      hasInitialGyro: false,
+      lastDeviceAlpha: 0,
+      lastDeviceBeta: 0,
+      lastDeviceGamma: 0,
+      isPointerDown: false,
+      pointerStartX: 0,
+      pointerStartY: 0,
+      pointerMovedDistance: 0,
+      fov: 78,
+      // Gaze interaction state
+      currentGazeId: null,
+      gazeHoldTime: 0,
+      gazeTriggeredId: null,
+      monumentAwakenings: {
+        scales: 0,
+        ophanim: 0,
+        eastTrumpet: 0,
+        westTrumpet: 0,
+        clepsydra: 0,
+        zenith: 0,
+        nadir: 0
+      }
+    };
+
+    const SKY_VERTEX_SHADER = `
+      varying vec3 vWorldDir;
+      varying vec2 vUv;
+      void main() {
+        vUv = uv;
+        vec4 worldPos = modelMatrix * vec4(position, 1.0);
+        vWorldDir = normalize(position);
+        gl_Position = projectionMatrix * viewMatrix * worldPos;
+      }
+    `;
+
+    const SKY_FRAGMENT_SHADER = `
+      precision highp float;
+      varying vec3 vWorldDir;
+      varying vec2 vUv;
+      uniform float uTime;
+      uniform float uZenithAwaken;
+      uniform float uNadirAwaken;
+
+      // 3D hash noise for domain-warped FBM
+      float hash(vec3 p) {
+        p = fract(p * 0.3183099 + 0.1);
+        p *= 17.0;
+        return fract(p.x * p.y * p.z * (p.x + p.y + p.z));
+      }
+
+      float noise(vec3 x) {
+        vec3 i = floor(x);
+        vec3 f = fract(x);
+        f = f * f * (3.0 - 2.0 * f);
+        return mix(
+          mix(mix(hash(i + vec3(0,0,0)), hash(i + vec3(1,0,0)), f.x),
+              mix(hash(i + vec3(0,1,0)), hash(i + vec3(1,1,0)), f.x), f.y),
+          mix(mix(hash(i + vec3(0,0,1)), hash(i + vec3(1,0,1)), f.x),
+              mix(hash(i + vec3(0,1,1)), hash(i + vec3(1,1,1)), f.x), f.y),
+          f.z
+        );
+      }
+
+      float fbm(vec3 p) {
+        float v = 0.0;
+        float a = 0.5;
+        for (int i = 0; i < 5; i++) {
+          v += a * noise(p);
+          p = p * 2.03 + vec3(0.17, -0.23, 0.31);
+          a *= 0.5;
+        }
+        return v;
+      }
+
+      void main() {
+        vec3 dir = normalize(vWorldDir);
+        float y = dir.y;
+        float angle = atan(dir.z, dir.x);
+        float radial = length(dir.xz);
+
+        // Domain-warped FBM clouds
+        vec3 q = vec3(
+          fbm(dir * 2.5 + vec3(0.0, uTime * 0.03, 0.0)),
+          fbm(dir * 2.5 + vec3(4.2, -uTime * 0.025, 1.7)),
+          fbm(dir * 2.5 + vec3(1.9, uTime * 0.02, -3.1))
+        );
+        float n = fbm(dir * 3.2 + 2.2 * q + vec3(0.0, -uTime * 0.04, 0.0));
+
+        // Base apocalyptic palette: bruised violet, abyssal crimson, molten gold
+        vec3 abyssColor = vec3(0.03, 0.01, 0.04);
+        vec3 crimsonColor = vec3(0.46, 0.06, 0.09);
+        vec3 violetColor = vec3(0.18, 0.07, 0.28);
+        vec3 goldColor = vec3(0.95, 0.74, 0.28);
+        vec3 seraphWhite = vec3(1.0, 0.96, 0.85);
+
+        vec3 col = mix(abyssColor, violetColor, smoothstep(-0.6, 0.4, y));
+        col = mix(col, crimsonColor, pow(n, 1.7) * smoothstep(-0.8, 0.5, y));
+        col += goldColor * pow(max(0.0, n - 0.35), 2.6) * (0.8 + 0.5 * smoothstep(-0.1, 0.85, y));
+
+        // Horizon apocalyptic lightning veins & Beksiński haze
+        float horizonGlow = exp(-abs(y + 0.02) * 5.5);
+        col += vec3(0.55, 0.16, 0.06) * horizonGlow * (0.45 + 0.55 * n);
+
+        // ZENITH (+Y): Fractal Rose Window of the Empyrean
+        if (y > 0.15) {
+          float zenithFactor = smoothstep(0.15, 0.995, y);
+          float petals1 = abs(sin(angle * 12.0 + uTime * 0.25));
+          float petals2 = abs(cos(angle * 24.0 - uTime * 0.4 + radial * 18.0));
+          float concentric = sin(radial * 45.0 - uTime * 1.4) * 0.5 + 0.5;
+          float rosePattern = mix(petals1, petals2, 0.5) * concentric;
+
+          float eyeCore = exp(-radial * 7.5) * (1.2 + uZenithAwaken * 1.5);
+          float roseGlow = pow(zenithFactor, 2.2) * (0.5 + 0.9 * rosePattern);
+
+          col += goldColor * roseGlow * (0.85 + 0.65 * uZenithAwaken);
+          col = mix(col, seraphWhite, clamp(eyeCore, 0.0, 1.0));
+        }
+
+        // NADIR (-Y): Sub-abyss crimson glow
+        if (y < -0.1) {
+          float nadirFactor = smoothstep(-0.1, -0.98, y);
+          float vortexSwirl = sin(angle * 8.0 + radial * 16.0 + uTime * 1.8) * 0.5 + 0.5;
+          col = mix(col, vec3(0.65, 0.08, 0.04) * (0.6 + 0.6 * uNadirAwaken), nadirFactor * vortexSwirl * 0.7);
+        }
+
+        // Subtle star-ash speckles in mid-sky
+        float starHash = pow(hash(floor(dir * 260.0)), 22.0);
+        col += vec3(1.0, 0.85, 0.55) * starHash * smoothstep(-0.2, 0.7, y) * 0.8;
+
+        gl_FragColor = vec4(col, 1.0);
+      }
+    `;
+
+    const SEA_VERTEX_SHADER = `
+      varying vec2 vUv;
+      varying vec3 vPos;
+      varying float vElevation;
+      uniform float uTime;
+      uniform float uNadirAwaken;
+
+      void main() {
+        vUv = uv;
+        vec3 pos = position;
+        float dist = length(pos.xz);
+        float angle = atan(pos.z, pos.x);
+
+        // Central gravity well funnel beneath the viewer
+        float funnel = -26.0 * exp(-dist * 0.042) * (1.0 + 0.45 * uNadirAwaken);
+
+        // Concentric dark mercury waves & spiral ripples
+        float wave1 = sin(dist * 0.22 - uTime * 2.1 + angle * 3.0) * 1.6;
+        float wave2 = cos(dist * 0.45 + uTime * 1.4 - angle * 5.0) * 0.8;
+        float chop = sin(pos.x * 0.15 + uTime) * cos(pos.z * 0.15 - uTime * 0.8) * 1.1;
+
+        pos.y += funnel + wave1 + wave2 + chop;
+        vElevation = wave1 + wave2 + chop;
+        vPos = pos;
+
+        gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
+      }
+    `;
+
+    const SEA_FRAGMENT_SHADER = `
+      precision highp float;
+      varying vec2 vUv;
+      varying vec3 vPos;
+      varying float vElevation;
+      uniform float uTime;
+      uniform float uNadirAwaken;
+
+      void main() {
+        float dist = length(vPos.xz);
+        float angle = atan(vPos.z, vPos.x);
+
+        // Swirling magma veins in dark liquid mercury
+        float spiral = sin(angle * 7.0 + dist * 0.25 - uTime * 2.4);
+        float secondary = cos(angle * 13.0 - dist * 0.38 + uTime * 1.6);
+        float veinMask = smoothstep(0.45, 0.98, spiral * 0.6 + secondary * 0.4);
+
+        vec3 mercuryDark = vec3(0.04, 0.03, 0.06);
+        vec3 mercurySpec = vec3(0.28, 0.23, 0.34);
+        vec3 magmaCrimson = vec3(0.82, 0.11, 0.06);
+        vec3 magmaGold = vec3(1.0, 0.68, 0.18);
+
+        float ridgeFactor = smoothstep(-2.0, 2.4, vElevation);
+        vec3 col = mix(mercuryDark, mercurySpec, ridgeFactor * 0.65);
+
+        // Magma veins & central Maw of Gehenna
+        float mawGlow = exp(-dist * 0.035) * (1.1 + uNadirAwaken * 1.4);
+        vec3 veinCol = mix(magmaCrimson, magmaGold, veinMask * 0.7 + mawGlow * 0.4);
+        col = mix(col, veinCol, veinMask * (0.42 + 0.35 * uNadirAwaken) + clamp(mawGlow * 0.75, 0.0, 0.9));
+
+        // Distance fade into abyssal fog
+        float fog = smoothstep(260.0, 45.0, dist);
+        col *= fog;
+
+        gl_FragColor = vec4(col, 1.0);
+      }
+    `;
+
+    const SOULS_VERTEX_SHADER = `
+      attribute vec3 aOrbitParams; // x: baseRadius, y: angleOffset, z: speedAndDirection (+ ascending, - descending)
+      attribute vec3 aSoulSeed;    // x: heightOffset, y: scaleY, z: phase
+      varying float vDestiny;      // >0 ascending to grace, <0 plunging to abyss
+      varying float vAlpha;
+      uniform float uTime;
+      uniform float uGlobalExcitement;
+
+      void main() {
+        float radius = aOrbitParams.x;
+        float baseAngle = aOrbitParams.y;
+        float speed = aOrbitParams.z * (1.0 + uGlobalExcitement * 0.6);
+        vDestiny = sign(speed);
+
+        // Vertical cycle between -80 (Nadir) and +115 (Zenith)
+        float cycleSpeed = abs(speed) * 4.2;
+        float rawH = mod(aSoulSeed.x + uTime * cycleSpeed * vDestiny, 195.0);
+        if (rawH < 0.0) rawH += 195.0;
+        float yPos = rawH - 80.0;
+
+        // Tornado funnel radius modulation (tighter at Nadir and Zenith, wider in mid-air)
+        float normalizedY = (yPos + 80.0) / 195.0; // 0 at bottom, 1 at top
+        float funnelShape = 0.38 + 0.95 * sin(normalizedY * 3.14159);
+        float currentRadius = radius * funnelShape;
+
+        float currentAngle = baseAngle + uTime * speed * 0.55 + normalizedY * 4.5 * vDestiny;
+
+        // Slight inward pull when ascending near Zenith or plunging into Nadir
+        vec3 worldCenter = vec3(
+          cos(currentAngle) * currentRadius,
+          yPos,
+          sin(currentAngle) * currentRadius
+        );
+
+        // Stretch monolith silhouette along vertical tangent
+        vec3 localPos = position;
+        localPos.y *= aSoulSeed.y;
+
+        // Rotate silhouette to face the center & tilt along helix
+        float s = sin(-currentAngle);
+        float c = cos(-currentAngle);
+        vec3 rotatedPos = vec3(
+          localPos.x * c - localPos.z * s,
+          localPos.y,
+          localPos.x * s + localPos.z * c
+        );
+
+        vec3 finalPos = worldCenter + rotatedPos;
+        vAlpha = sin(normalizedY * 3.14159);
+
+        gl_Position = projectionMatrix * modelViewMatrix * vec4(finalPos, 1.0);
+      }
+    `;
+
+    const SOULS_FRAGMENT_SHADER = `
+      precision highp float;
+      varying float vDestiny;
+      varying float vAlpha;
+
+      void main() {
+        vec3 ascendingGold = vec3(1.0, 0.84, 0.42);
+        vec3 descendingCrimson = vec3(0.92, 0.18, 0.14);
+        vec3 col = vDestiny > 0.0 ? ascendingGold : descendingCrimson;
+        gl_FragColor = vec4(col, clamp(vAlpha * 0.85, 0.08, 0.92));
+      }
+    `;
+
+    class DiesIraeAudioEngine {
+      constructor() {
+        this.ctx = null;
+        this.masterGain = null;
+        this.convolver = null;
+        this.organFilter = null;
+        this.choirFilter = null;
+        this.subGain = null;
+        this.oscillators = [];
+        this.isInitialized = false;
+        this.isMuted = false;
+      }
+
+      init() {
+        if (this.isInitialized) {
+          if (this.ctx && this.ctx.state === 'suspended') {
+            this.ctx.resume();
+          }
+          return;
+        }
+
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (!AudioCtx) return;
+
+        this.ctx = new AudioCtx();
+        this.masterGain = this.ctx.createGain();
+        this.masterGain.gain.setValueAtTime(0.01, this.ctx.currentTime);
+        this.masterGain.gain.exponentialRampToValueAtTime(0.55, this.ctx.currentTime + 2.5);
+        this.masterGain.connect(this.ctx.destination);
+
+        // Generate 4.2-second procedural stereo cathedral impulse response
+        this.convolver = this.ctx.createConvolver();
+        this.convolver.buffer = this.createCathedralImpulse(4.2, 2.8);
+
+        const reverbGain = this.ctx.createGain();
+        reverbGain.gain.value = 0.72;
+        this.convolver.connect(reverbGain);
+        reverbGain.connect(this.masterGain);
+
+        // Organ & Choir Filter modulated by camera pitch (Zenith vs Abyss)
+        this.organFilter = this.ctx.createBiquadFilter();
+        this.organFilter.type = 'lowpass';
+        this.organFilter.frequency.value = 380;
+        this.organFilter.Q.value = 2.2;
+        this.organFilter.connect(this.masterGain);
+        this.organFilter.connect(this.convolver);
+
+        // Cathedral Pipe Organ Pedal Drone (D1 = 36.71Hz, A1 = 55Hz, D2 = 73.42Hz, F2 = 87.31Hz, A2 = 110Hz)
+        const droneFreqs = [36.71, 55.0, 73.42, 110.0, 146.83, 164.81, 220.0];
+        const droneTypes = ['sawtooth', 'triangle', 'sawtooth', 'sawtooth', 'triangle', 'sine', 'sawtooth'];
+        const droneGains = [0.16, 0.11, 0.10, 0.07, 0.06, 0.04, 0.045];
+
+        droneFreqs.forEach((freq, idx) => {
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc.type = droneTypes[idx];
+          osc.frequency.value = freq;
+          // Slight sacred chorus detune
+          osc.detune.value = (idx % 2 === 0 ? 1 : -1) * (idx * 2.4);
+
+          gain.gain.value = droneGains[idx];
+          osc.connect(gain);
+          gain.connect(this.organFilter);
+          osc.start();
+          this.oscillators.push(osc);
+        });
+
+        // Sub-bass Abyss rumble oscillator (modulated when looking down into Gehenna)
+        const subOsc = this.ctx.createOscillator();
+        this.subGain = this.ctx.createGain();
+        subOsc.type = 'sine';
+        subOsc.frequency.value = 36.71;
+        this.subGain.gain.value = 0.15;
+        subOsc.connect(this.subGain);
+        this.subGain.connect(this.masterGain);
+        subOsc.start();
+
+        this.isInitialized = true;
+        // Sound an initial welcoming distant brass swell
+        setTimeout(() => this.playDiesIraeMotif('ophanim'), 500);
+      }
+
+      createCathedralImpulse(duration, decay) {
+        const rate = this.ctx.sampleRate;
+        const length = rate * duration;
+        const impulse = this.ctx.createBuffer(2, length, rate);
+        for (let ch = 0; ch < 2; ch++) {
+          const channelData = impulse.getChannelData(ch);
+          for (let i = 0; i < length; i++) {
+            const env = Math.pow(1 - i / length, decay);
+            channelData[i] = (Math.random() * 2 - 1) * env * 0.55;
+          }
+        }
+        return impulse;
+      }
+
+      updateByGazePitch(pitchRad) {
+        if (!this.isInitialized || !this.ctx || this.isMuted) return;
+        const now = this.ctx.currentTime;
+        // Map pitch (-PI/2 to +PI/2) -> [0, 1]
+        const normalized = Math.max(0, Math.min(1, (Math.sin(pitchRad) + 1) * 0.5));
+        // Looking up to Zenith opens the filter up to 2400Hz (celestial overtones); looking down darkens to 130Hz
+        const targetFreq = 120 + Math.pow(normalized, 2.2) * 2350;
+        this.organFilter.frequency.setTargetAtTime(targetFreq, now, 0.12);
+
+        // Increase sub-bass rumble when looking down into the Nadir
+        const abyssWeight = Math.max(0, -Math.sin(pitchRad));
+        this.subGain.gain.setTargetAtTime(0.12 + abyssWeight * 0.32, now, 0.15);
+      }
+
+      playDiesIraeMotif(monumentType = 'trumpet') {
+        if (!this.isInitialized) this.init();
+        if (!this.ctx || this.isMuted) return;
+        if (this.ctx.state === 'suspended') this.ctx.resume();
+
+        const now = this.ctx.currentTime;
+        // Dies Irae plainchant & monument specific harmonic voicings
+        let notes = [174.61, 164.81, 174.61, 146.83]; // F3 - E3 - F3 - D3 (Iconic Dies Irae 4-note chant)
+        let noteDuration = 0.62;
+
+        if (monumentType === 'zenith') {
+          // Luminous D Lydian / Major ninth celestial choir brass
+          notes = [293.66, 369.99, 440.0, 587.33];
+          noteDuration = 0.55;
+        } else if (monumentType === 'scales') {
+          // Cosmic Fifth & Tritone resolution
+          notes = [146.83, 207.65, 220.0, 293.66];
+          noteDuration = 0.58;
+        } else if (monumentType === 'nadir') {
+          // Deep Abyssal Contrabass Tuba cluster
+          notes = [73.42, 69.30, 65.41, 55.0];
+          noteDuration = 0.72;
+        } else if (monumentType === 'clepsydra') {
+          // Descending sands of time arpeggio
+          notes = [329.63, 293.66, 261.63, 220.0];
+          noteDuration = 0.50;
+        }
+
+        notes.forEach((freq, idx) => {
+          const startTime = now + idx * (noteDuration * 0.88);
+          this.triggerBrassVoice(freq, startTime, noteDuration * 1.45, 0.16);
+          // Sub-octave reinforcement for apocalyptic weight
+          this.triggerBrassVoice(freq * 0.5, startTime, noteDuration * 1.55, 0.11);
+        });
+      }
+
+      triggerBrassVoice(freq, startTime, duration, peakGain) {
+        const osc1 = this.ctx.createOscillator();
+        const osc2 = this.ctx.createOscillator();
+        const brassFilter = this.ctx.createBiquadFilter();
+        const env = this.ctx.createGain();
+
+        osc1.type = 'sawtooth';
+        osc2.type = 'sawtooth';
+        osc1.frequency.setValueAtTime(freq, startTime);
+        osc2.frequency.setValueAtTime(freq * 1.004, startTime); // rich brass unison detune
+
+        brassFilter.type = 'lowpass';
+        brassFilter.Q.value = 3.5;
+        brassFilter.frequency.setValueAtTime(freq * 1.2, startTime);
+        brassFilter.frequency.exponentialRampToValueAtTime(freq * 6.5, startTime + duration * 0.35);
+        brassFilter.frequency.exponentialRampToValueAtTime(freq * 1.8, startTime + duration);
+
+        env.gain.setValueAtTime(0.0001, startTime);
+        env.gain.linearRampToValueAtTime(peakGain, startTime + 0.14);
+        env.gain.exponentialRampToValueAtTime(0.0001, startTime + duration);
+
+        osc1.connect(brassFilter);
+        osc2.connect(brassFilter);
+        brassFilter.connect(env);
+        env.connect(this.convolver);
+        env.connect(this.masterGain);
+
+        osc1.start(startTime);
+        osc2.start(startTime);
+        osc1.stop(startTime + duration + 0.05);
+        osc2.stop(startTime + duration + 0.05);
+      }
+
+      toggleMute() {
+        if (!this.isInitialized) {
+          this.init();
+          return true;
+        }
+        this.isMuted = !this.isMuted;
+        const now = this.ctx.currentTime;
+        this.masterGain.gain.setTargetAtTime(this.isMuted ? 0.0001 : 0.55, now, 0.1);
+        return !this.isMuted;
+      }
+    }
+
+    const audioEngine = new DiesIraeAudioEngine();
+
+    function createSeraphEyeTexture() {
+      const canvas = document.createElement('canvas');
+      canvas.width = 256;
+      canvas.height = 128;
+      const ctx = canvas.getContext('2d');
+
+      // Metallic gold rim background
+      ctx.fillStyle = '#2a1c08';
+      ctx.fillRect(0, 0, 256, 128);
+
+      // Repeat 4 glowing eyes across the band
+      for (let i = 0; i < 4; i++) {
+        const cx = i * 64 + 32;
+        const cy = 64;
+
+        // Eye sclera glow
+        const grad = ctx.createRadialGradient(cx, cy, 2, cx, cy, 26);
+        grad.addColorStop(0, '#ffffff');
+        grad.addColorStop(0.25, '#ffdf73');
+        grad.addColorStop(0.55, '#c84b18');
+        grad.addColorStop(1, 'rgba(42,28,8,0)');
+
+        ctx.fillStyle = grad;
+        ctx.beginPath();
+        ctx.ellipse(cx, cy, 26, 16, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Slit pupil
+        ctx.fillStyle = '#09030c';
+        ctx.beginPath();
+        ctx.ellipse(cx, cy, 4, 13, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Specular spark
+        ctx.fillStyle = '#fff9e6';
+        ctx.beginPath();
+        ctx.arc(cx - 3, cy - 4, 2.2, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      const texture = new THREE.CanvasTexture(canvas);
+      texture.wrapS = THREE.RepeatWrapping;
+      texture.wrapT = THREE.RepeatWrapping;
+      texture.repeat.set(6, 1);
+      return texture;
+    }
+
+    function createRunicTabletTexture() {
+      const canvas = document.createElement('canvas');
+      canvas.width = 256;
+      canvas.height = 512;
+      const ctx = canvas.getContext('2d');
+
+      ctx.fillStyle = '#0c0812';
+      ctx.fillRect(0, 0, 256, 512);
+
+      // Glowing golden border
+      ctx.strokeStyle = '#d4af37';
+      ctx.lineWidth = 4;
+      ctx.strokeRect(12, 12, 232, 488);
+
+      // Esoteric geometric runes
+      ctx.strokeStyle = '#ffdf73';
+      ctx.lineWidth = 2;
+      for (let row = 0; row < 10; row++) {
+        for (let col = 0; col < 5; col++) {
+          const x = 34 + col * 42;
+          const y = 38 + row * 44;
+          ctx.beginPath();
+          ctx.moveTo(x, y);
+          ctx.lineTo(x + ((row + col) % 2 === 0 ? 22 : 10), y + 26);
+          ctx.moveTo(x + 22, y + 6);
+          ctx.lineTo(x + 4, y + 20);
+          if ((row * col) % 3 === 0) {
+            ctx.arc(x + 11, y + 13, 8, 0, Math.PI * 2);
+          }
+          ctx.stroke();
+        }
+      }
+
+      return new THREE.CanvasTexture(canvas);
+    }
+
+    function createInscriptionBillboard(latinTitle, englishSubtitle, loreVerse) {
+      const canvas = document.createElement('canvas');
+      canvas.width = 1024;
+      canvas.height = 320;
+      const ctx = canvas.getContext('2d');
+
+      // Translucent obsidian plaque with ornate gold trim
+      const grad = ctx.createLinearGradient(0, 0, 1024, 0);
+      grad.addColorStop(0, 'rgba(6, 3, 12, 0.0)');
+      grad.addColorStop(0.15, 'rgba(10, 6, 18, 0.88)');
+      grad.addColorStop(0.85, 'rgba(10, 6, 18, 0.88)');
+      grad.addColorStop(1, 'rgba(6, 3, 12, 0.0)');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 20, 1024, 280);
+
+      // Top and bottom sacred lines
+      ctx.strokeStyle = 'rgba(255, 223, 115, 0.75)';
+      ctx.lineWidth = 2.5;
+      ctx.beginPath();
+      ctx.moveTo(140, 36);
+      ctx.lineTo(884, 36);
+      ctx.moveTo(140, 284);
+      ctx.lineTo(884, 284);
+      ctx.stroke();
+
+      // Diamond centerpiece
+      ctx.fillStyle = '#ffdf73';
+      ctx.beginPath();
+      ctx.moveTo(512, 24);
+      ctx.lineTo(524, 36);
+      ctx.lineTo(512, 48);
+      ctx.lineTo(500, 36);
+      ctx.closePath();
+      ctx.fill();
+
+      // Latin header
+      ctx.textAlign = 'center';
+      ctx.fillStyle = '#ffdf73';
+      ctx.font = 'bold 44px "Cinzel Decorative", Georgia, serif';
+      ctx.fillText(latinTitle, 512, 110);
+
+      // English translation
+      ctx.fillStyle = '#f5e8c7';
+      ctx.font = 'italic 30px "Cormorant Garamond", Georgia, serif';
+      ctx.fillText(englishSubtitle, 512, 168);
+
+      // Poetic inscription
+      ctx.fillStyle = 'rgba(232, 212, 174, 0.85)';
+      ctx.font = '24px "Cormorant Garamond", Georgia, serif';
+      ctx.fillText(loreVerse, 512, 232);
+
+      const tex = new THREE.CanvasTexture(canvas);
+      const mat = new THREE.MeshBasicMaterial({
+        map: tex,
+        transparent: true,
+        opacity: 0.0,
+        depthWrite: false,
+        side: THREE.DoubleSide
+      });
+      const geo = new THREE.PlaneGeometry(22, 6.8);
+      const mesh = new THREE.Mesh(geo, mat);
+      return mesh;
+    }
+
+    const container = document.getElementById('webgl-container');
+    const renderer = new THREE.WebGLRenderer({
+      antialias: true,
+      powerPreference: 'high-performance'
+    });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.15;
+    container.appendChild(renderer.domElement);
+
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.FogExp2(0x09040e, 0.0038);
+
+    // Master Camera Rig at the Viewer's Perch (0, 0, 0)
+    const cameraRig = new THREE.Group();
+    cameraRig.position.set(0, 0, 0);
+    scene.add(cameraRig);
+
+    const mainCamera = new THREE.PerspectiveCamera(
+      STATE.fov,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      900
+    );
+    cameraRig.add(mainCamera);
+
+    // Left and Right Eye Sub-Cameras for Google Cardboard Stereoscopic SBS Rendering
+    const eyeCameraL = new THREE.PerspectiveCamera(80, (window.innerWidth * 0.5) / window.innerHeight, 0.1, 900);
+    const eyeCameraR = new THREE.PerspectiveCamera(80, (window.innerWidth * 0.5) / window.innerHeight, 0.1, 900);
+    mainCamera.add(eyeCameraL);
+    mainCamera.add(eyeCameraR);
+
+    function updateIPD(ipdMillimeters) {
+      STATE.ipdMm = ipdMillimeters;
+      // Convert mm to scene meters (scaled slightly for monumental depth perception in VR)
+      const halfSep = (ipdMillimeters / 1000) * 0.5 * 1.65;
+      eyeCameraL.position.set(-halfSep, 0, 0);
+      eyeCameraR.position.set(halfSep, 0, 0);
+
+      // Update barrel vignette eye mask centers
+      const offsetPct = 50 + ((64 - ipdMillimeters) * 0.25);
+      document.getElementById('left-eye-mask').style.setProperty('--eye-center-x', `${offsetPct}%`);
+      document.getElementById('right-eye-mask').style.setProperty('--eye-center-x', `${100 - offsetPct}%`);
+      document.getElementById('hud-ipd-value').textContent = `${ipdMillimeters}mm`;
+    }
+    updateIPD(STATE.ipdMm);
+
+    // Dramatic Surrealist Lighting
+    const ambientLight = new THREE.AmbientLight(0x281836, 1.35);
+    scene.add(ambientLight);
+
+    const zenithLight = new THREE.PointLight(0xffdf73, 3.2, 420);
+    zenithLight.position.set(0, 120, 0);
+    scene.add(zenithLight);
+
+    const nadirLight = new THREE.PointLight(0xd92b1c, 2.6, 320);
+    nadirLight.position.set(0, -80, 0);
+    scene.add(nadirLight);
+
+    const throneLight = new THREE.PointLight(0xffb84d, 2.5, 220);
+    throneLight.position.set(0, 18, -75);
+    scene.add(throneLight);
+
+    const reticleGroup = new THREE.Group();
+    reticleGroup.position.set(0, 0, -3.2);
+    mainCamera.add(reticleGroup);
+
+    const reticleOuterMat = new THREE.MeshBasicMaterial({
+      color: 0xffdf73,
+      transparent: true,
+      opacity: 0.65,
+      depthTest: false
+    });
+    const reticleOuter = new THREE.Mesh(new THREE.RingGeometry(0.042, 0.052, 32), reticleOuterMat);
+    reticleGroup.add(reticleOuter);
+
+    const reticleDiamond = new THREE.Mesh(
+      new THREE.RingGeometry(0.062, 0.068, 4),
+      new THREE.MeshBasicMaterial({ color: 0xd4af37, transparent: true, opacity: 0.4, depthTest: false })
+    );
+    reticleGroup.add(reticleDiamond);
+
+    const reticleCenterDot = new THREE.Mesh(
+      new THREE.CircleGeometry(0.009, 16),
+      new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.9, depthTest: false })
+    );
+    reticleGroup.add(reticleCenterDot);
+
+    // Dynamic gaze progress ring
+    let reticleChargeMesh = new THREE.Mesh(
+      new THREE.RingGeometry(0.075, 0.092, 32, 1, 0, 0.001),
+      new THREE.MeshBasicMaterial({ color: 0xffdf73, side: THREE.DoubleSide, depthTest: false })
+    );
+    reticleGroup.add(reticleChargeMesh);
+
+    function updateReticleProgress(progress) {
+      reticleGroup.remove(reticleChargeMesh);
+      reticleChargeMesh.geometry.dispose();
+      const theta = Math.max(0.001, progress * Math.PI * 2);
+      reticleChargeMesh.geometry = new THREE.RingGeometry(0.075, 0.094, 40, 1, Math.PI * 0.5, theta);
+      reticleGroup.add(reticleChargeMesh);
+    }
+
+    const skyUniforms = {
+      uTime: { value: 0 },
+      uZenithAwaken: { value: 0 },
+      uNadirAwaken: { value: 0 }
+    };
+    const skyDome = new THREE.Mesh(
+      new THREE.SphereGeometry(440, 64, 48),
+      new THREE.ShaderMaterial({
+        vertexShader: SKY_VERTEX_SHADER,
+        fragmentShader: SKY_FRAGMENT_SHADER,
+        uniforms: skyUniforms,
+        side: THREE.BackSide,
+        depthWrite: false
+      })
+    );
+    scene.add(skyDome);
+
+    // Nadir Sea of Dark Mercury (-Y)
+    const seaUniforms = {
+      uTime: { value: 0 },
+      uNadirAwaken: { value: 0 }
+    };
+    const seaPlane = new THREE.Mesh(
+      new THREE.PlaneGeometry(560, 560, 140, 140),
+      new THREE.ShaderMaterial({
+        vertexShader: SEA_VERTEX_SHADER,
+        fragmentShader: SEA_FRAGMENT_SHADER,
+        uniforms: seaUniforms
+      })
+    );
+    seaPlane.rotation.x = -Math.PI * 0.5;
+    seaPlane.position.y = -85;
+    scene.add(seaPlane);
+
+    const perchGroup = new THREE.Group();
+    perchGroup.position.set(0, -2.4, 0);
+    scene.add(perchGroup);
+
+    const glassSigilDisc = new THREE.Mesh(
+      new THREE.CylinderGeometry(5.5, 5.5, 0.12, 64),
+      new THREE.MeshPhysicalMaterial({
+        color: 0x160b24,
+        transmission: 0.75,
+        opacity: 0.42,
+        transparent: true,
+        roughness: 0.15,
+        metalness: 0.2
+      })
+    );
+    perchGroup.add(glassSigilDisc);
+
+    const goldWireMat = new THREE.MeshBasicMaterial({
+      color: 0xffdf73,
+      wireframe: true,
+      transparent: true,
+      opacity: 0.55
+    });
+
+    const sigilRingOuter = new THREE.Mesh(new THREE.RingGeometry(5.2, 5.55, 64), new THREE.MeshBasicMaterial({
+      color: 0xd4af37,
+      side: THREE.DoubleSide
+    }));
+    sigilRingOuter.rotation.x = -Math.PI * 0.5;
+    sigilRingOuter.position.y = 0.08;
+    perchGroup.add(sigilRingOuter);
+
+    const sigilStar1 = new THREE.Mesh(new THREE.RingGeometry(3.6, 3.75, 3), new THREE.MeshBasicMaterial({
+      color: 0xffdf73,
+      side: THREE.DoubleSide,
+      transparent: true,
+      opacity: 0.75
+    }));
+    sigilStar1.rotation.x = -Math.PI * 0.5;
+    sigilStar1.position.y = 0.09;
+    perchGroup.add(sigilStar1);
+
+    const sigilStar2 = sigilStar1.clone();
+    sigilStar2.rotation.z = Math.PI;
+    perchGroup.add(sigilStar2);
+
+    // 8 Small Floating Censer Obelisks around the Viewer's Sigil
+    for (let i = 0; i < 8; i++) {
+      const ang = (i / 8) * Math.PI * 2;
+      const post = new THREE.Mesh(
+        new THREE.ConeGeometry(0.18, 1.4, 4),
+        new THREE.MeshStandardMaterial({ color: 0x1a1221, metalness: 0.85, roughness: 0.25 })
+      );
+      post.position.set(Math.cos(ang) * 5.4, 0.7, Math.sin(ang) * 5.4);
+      post.rotation.x = Math.PI;
+      perchGroup.add(post);
+
+      const orb = new THREE.Mesh(
+        new THREE.OctahedronGeometry(0.14, 0),
+        new THREE.MeshBasicMaterial({ color: 0xffdf73 })
+      );
+      orb.position.set(Math.cos(ang) * 5.4, 1.65, Math.sin(ang) * 5.4);
+      perchGroup.add(orb);
+    }
+
+    const gazeTargets = [];
+    const seraphEyeTex = createSeraphEyeTexture();
+
+    const northThroneGroup = new THREE.Group();
+    northThroneGroup.position.set(0, 26, -92);
+    scene.add(northThroneGroup);
+
+    // 4 Interlocking Golden Ophanim Rings Studded with Eyes
+    const ophanimRings = [];
+    const ringRadii = [26, 22, 18, 14];
+    const ringTubes = [1.05, 0.9, 0.8, 0.65];
+
+    ringRadii.forEach((r, idx) => {
+      const ringMat = new THREE.MeshStandardMaterial({
+        color: 0xffcf56,
+        emissive: 0xb86f14,
+        emissiveIntensity: 0.75,
+        map: seraphEyeTex,
+        emissiveMap: seraphEyeTex,
+        roughness: 0.22,
+        metalness: 0.92
+      });
+      const torus = new THREE.Mesh(new THREE.TorusGeometry(r, ringTubes[idx], 24, 96), ringMat);
+      torus.rotation.set(idx * 0.6, idx * 0.8, idx * 0.4);
+      northThroneGroup.add(torus);
+      ophanimRings.push(torus);
+    });
+
+    // Fractured Obsidian Monolith-Deity at the Core of the Ophanim
+    const seraphCoreGroup = new THREE.Group();
+    northThroneGroup.add(seraphCoreGroup);
+
+    const deityMonolithMat = new THREE.MeshStandardMaterial({
+      color: 0x09050f,
+      emissive: 0x38121a,
+      emissiveIntensity: 0.4,
+      roughness: 0.15,
+      metalness: 0.95
+    });
+
+    const coreSpire = new THREE.Mesh(new THREE.OctahedronGeometry(7.5, 0), deityMonolithMat);
+    coreSpire.scale.set(0.75, 2.1, 0.75);
+    seraphCoreGroup.add(coreSpire);
+
+    const polyHalo = new THREE.Mesh(
+      new THREE.IcosahedronGeometry(10.5, 1),
+      new THREE.MeshBasicMaterial({ color: 0xffdf73, wireframe: true, transparent: true, opacity: 0.55 })
+    );
+    seraphCoreGroup.add(polyHalo);
+
+    // THE SCALES OF COSMIC JUDGMENT (Held below the Ophanim Throne)
+    const scalesGroup = new THREE.Group();
+    scalesGroup.position.set(0, -18, 12);
+    northThroneGroup.add(scalesGroup);
+
+    const goldMetalMat = new THREE.MeshStandardMaterial({
+      color: 0xffe07d,
+      emissive: 0x6b450a,
+      emissiveIntensity: 0.5,
+      metalness: 0.95,
+      roughness: 0.18
+    });
+
+    // Central Vertical Pillar & Fulcrum
+    const fulcrumSpire = new THREE.Mesh(new THREE.CylinderGeometry(0.45, 1.2, 22, 16), goldMetalMat);
+    fulcrumSpire.position.y = 6;
+    scalesGroup.add(fulcrumSpire);
+
+    // Articulated Balance Beam
+    const balanceBeamGroup = new THREE.Group();
+    balanceBeamGroup.position.set(0, 2, 0);
+    scalesGroup.add(balanceBeamGroup);
+
+    const beamMesh = new THREE.Mesh(new THREE.CylinderGeometry(0.45, 0.45, 48, 24), goldMetalMat);
+    beamMesh.rotation.z = Math.PI * 0.5;
+    balanceBeamGroup.add(beamMesh);
+
+    // Left Pan (-X): Miniature Pulsing Star (Grace / Light)
+    const leftPanGroup = new THREE.Group();
+    leftPanGroup.position.set(-23, 0, 0);
+    balanceBeamGroup.add(leftPanGroup);
+
+    const chainMat = new THREE.MeshBasicMaterial({ color: 0xffdf73, wireframe: true });
+    const leftChain = new THREE.Mesh(new THREE.ConeGeometry(4.2, 13, 6, 1, true), chainMat);
+    leftChain.position.y = -6.5;
+    leftPanGroup.add(leftChain);
+
+    const leftDish = new THREE.Mesh(
+      new THREE.CylinderGeometry(4.6, 2.2, 1.2, 32),
+      goldMetalMat
+    );
+    leftDish.position.y = -13;
+    leftPanGroup.add(leftDish);
+
+    const starOfGrace = new THREE.Mesh(
+      new THREE.IcosahedronGeometry(3.2, 2),
+      new THREE.MeshBasicMaterial({ color: 0xfff8dc })
+    );
+    starOfGrace.position.y = -9.5;
+    leftPanGroup.add(starOfGrace);
+
+    const starCorona = new THREE.Mesh(
+      new THREE.IcosahedronGeometry(4.6, 1),
+      new THREE.MeshBasicMaterial({ color: 0xffdf73, wireframe: true, transparent: true, opacity: 0.65 })
+    );
+    starCorona.position.y = -9.5;
+    leftPanGroup.add(starCorona);
+
+    // Right Pan (+X): Dark Singularity & Accretion Disk (Oblivion / Gravity)
+    const rightPanGroup = new THREE.Group();
+    rightPanGroup.position.set(23, 0, 0);
+    balanceBeamGroup.add(rightPanGroup);
+
+    const rightChain = leftChain.clone();
+    rightPanGroup.add(rightChain);
+
+    const rightDish = leftDish.clone();
+    rightPanGroup.add(rightDish);
+
+    const blackHoleCore = new THREE.Mesh(
+      new THREE.SphereGeometry(2.8, 32, 32),
+      new THREE.MeshBasicMaterial({ color: 0x020005 })
+    );
+    blackHoleCore.position.y = -9.5;
+    rightPanGroup.add(blackHoleCore);
+
+    const accretionDisk = new THREE.Mesh(
+      new THREE.RingGeometry(3.2, 6.2, 48),
+      new THREE.MeshBasicMaterial({
+        color: 0xd92b1c,
+        side: THREE.DoubleSide,
+        transparent: true,
+        opacity: 0.85
+      })
+    );
+    accretionDisk.position.y = -9.5;
+    accretionDisk.rotation.x = Math.PI * 0.35;
+    rightPanGroup.add(accretionDisk);
+
+    function createTrumpeterColossus(isEast) {
+      const flankGroup = new THREE.Group();
+      const xDir = isEast ? 1 : -1;
+      flankGroup.position.set(xDir * 95, -10, 0);
+      flankGroup.lookAt(0, 6, 0);
+      scene.add(flankGroup);
+
+      const boneMat = new THREE.MeshStandardMaterial({
+        color: 0x9e8c72,
+        emissive: 0x241510,
+        roughness: 0.65,
+        metalness: 0.3
+      });
+
+      // Gothic Bone Cathedral Arches framing the Trumpeters
+      for (let a = -1; a <= 1; a++) {
+        const archGroup = new THREE.Group();
+        archGroup.position.set(a * 28, 0, -14);
+        flankGroup.add(archGroup);
+
+        // Twin Ribbed Monolith Pillars
+        const leftPillar = new THREE.Mesh(new THREE.CylinderGeometry(1.4, 2.8, 76, 8), boneMat);
+        leftPillar.position.set(-9, -15, 0);
+        archGroup.add(leftPillar);
+
+        const rightPillar = new THREE.Mesh(new THREE.CylinderGeometry(1.4, 2.8, 76, 8), boneMat);
+        rightPillar.position.set(9, -15, 0);
+        archGroup.add(rightPillar);
+
+        // Pointed Gothic Crown
+        const gothicCrown = new THREE.Mesh(new THREE.TorusGeometry(9, 1.1, 8, 24, Math.PI), boneMat);
+        gothicCrown.position.set(0, 23, 0);
+        archGroup.add(gothicCrown);
+
+        // Spire Finial
+        const spire = new THREE.Mesh(new THREE.ConeGeometry(1.6, 18, 6), boneMat);
+        spire.position.set(0, 39, 0);
+        archGroup.add(spire);
+      }
+
+      // Colossal Faceless Draped Angelic Automata holding 35-meter Brazen Horns
+      const count = isEast ? 4 : 3; // 4 on East + 3 on West = The Seven Trumpeters
+      const shockwaves = [];
+
+      for (let i = 0; i < count; i++) {
+        const offsetX = (i - (count - 1) * 0.5) * 24;
+        const angelGroup = new THREE.Group();
+        angelGroup.position.set(offsetX, -4, 4);
+        flankGroup.add(angelGroup);
+
+        // Draped Monolithic Body
+        const body = new THREE.Mesh(
+          new THREE.ConeGeometry(5.2, 34, 7),
+          new THREE.MeshStandardMaterial({ color: 0x1b1424, metalness: 0.7, roughness: 0.35 })
+        );
+        body.position.y = -4;
+        angelGroup.add(body);
+
+        // Faceless Hooded Visage with Vertical Golden Halo
+        const head = new THREE.Mesh(new THREE.OctahedronGeometry(2.4, 0), deityMonolithMat);
+        head.scale.set(0.8, 1.5, 0.9);
+        head.position.y = 15.5;
+        angelGroup.add(head);
+
+        const angelHalo = new THREE.Mesh(
+          new THREE.RingGeometry(3.2, 4.1, 24),
+          new THREE.MeshBasicMaterial({ color: 0xffdf73, side: THREE.DoubleSide })
+        );
+        angelHalo.position.set(0, 16.5, -1.2);
+        angelGroup.add(angelHalo);
+
+        // Towering Sharp Geometric Wings
+        for (let w = -1; w <= 1; w += 2) {
+          const wing = new THREE.Mesh(
+            new THREE.ConeGeometry(3.2, 28, 3),
+            goldMetalMat
+          );
+          wing.position.set(w * 5.8, 18, -3);
+          wing.rotation.z = -w * 0.42;
+          wing.rotation.x = -0.2;
+          angelGroup.add(wing);
+        }
+
+        // 35-Meter Brazen Apocalyptic Horn aimed toward the sky and viewer
+        const hornGroup = new THREE.Group();
+        hornGroup.position.set(0, 14.5, 2.2);
+        hornGroup.rotation.x = -Math.PI * 0.34; // Aimed skyward toward the viewer
+        angelGroup.add(hornGroup);
+
+        const hornTube = new THREE.Mesh(
+          new THREE.CylinderGeometry(0.95, 0.18, 30, 16, 1, true),
+          goldMetalMat
+        );
+        hornTube.position.y = 15;
+        hornGroup.add(hornTube);
+
+        const hornBell = new THREE.Mesh(
+          new THREE.ConeGeometry(4.2, 6.5, 24, 1, true),
+          new THREE.MeshStandardMaterial({
+            color: 0xffdf73,
+            emissive: 0xc86b14,
+            emissiveIntensity: 0.7,
+            side: THREE.DoubleSide,
+            metalness: 0.95,
+            roughness: 0.15
+          })
+        );
+        hornBell.position.y = 32;
+        hornBell.rotation.x = Math.PI;
+        hornGroup.add(hornBell);
+
+        // Sonic Shockwave Ring emitter at the mouth of the brazen horn
+        const waveRing = new THREE.Mesh(
+          new THREE.RingGeometry(3.5, 4.4, 32),
+          new THREE.MeshBasicMaterial({
+            color: 0xffdf73,
+            side: THREE.DoubleSide,
+            transparent: true,
+            opacity: 0.75
+          })
+        );
+        waveRing.rotation.x = Math.PI * 0.5;
+        waveRing.position.y = 34;
+        hornGroup.add(waveRing);
+        shockwaves.push({ mesh: waveRing, phase: i * 0.33 });
+      }
+
+      return { group: flankGroup, shockwaves };
+    }
+
+    const eastTrumpeters = createTrumpeterColossus(true);
+    const westTrumpeters = createTrumpeterColossus(false);
+
+    const southClepsydraGroup = new THREE.Group();
+    southClepsydraGroup.position.set(0, 12, 92);
+    southClepsydraGroup.lookAt(0, 12, 0);
+    scene.add(southClepsydraGroup);
+
+    // Titanic Shattered Hourglass Bulbs
+    const glassBulbMat = new THREE.MeshPhysicalMaterial({
+      color: 0xffdf73,
+      emissive: 0x4a2c09,
+      transmission: 0.65,
+      transparent: true,
+      opacity: 0.45,
+      roughness: 0.15,
+      metalness: 0.3,
+      wireframe: false
+    });
+
+    const upperBulb = new THREE.Mesh(new THREE.ConeGeometry(13, 22, 8, 1, true), glassBulbMat);
+    upperBulb.position.y = 12;
+    upperBulb.rotation.x = Math.PI;
+    southClepsydraGroup.add(upperBulb);
+
+    const lowerBulb = new THREE.Mesh(new THREE.ConeGeometry(13, 22, 8, 1, true), glassBulbMat);
+    lowerBulb.position.y = -12;
+    southClepsydraGroup.add(lowerBulb);
+
+    // Astrolabe Gears around the Hourglass Nexus
+    const clepsydraRings = [];
+    for (let g = 0; g < 3; g++) {
+      const gear = new THREE.Mesh(
+        new THREE.RingGeometry(15 + g * 4.5, 16.2 + g * 4.5, 24),
+        new THREE.MeshBasicMaterial({
+          color: g % 2 === 0 ? 0xffdf73 : 0xd4af37,
+          side: THREE.DoubleSide,
+          transparent: true,
+          opacity: 0.75
+        })
+      );
+      southClepsydraGroup.add(gear);
+      clepsydraRings.push(gear);
+    }
+
+    // Frozen Spiraling Streams of Golden Sand
+    const sandGeo = new THREE.BufferGeometry();
+    const sandCount = 900;
+    const sandPositions = new Float32Array(sandCount * 3);
+    for (let i = 0; i < sandCount; i++) {
+      const t = (i / sandCount) * 2 - 1; // -1 to 1
+      const spiralAng = t * 18.0 + (i % 7);
+      const r = Math.abs(t) * 11.5 + 0.6 + Math.random() * 1.8;
+      sandPositions[i * 3] = Math.cos(spiralAng) * r;
+      sandPositions[i * 3 + 1] = t * 23.0;
+      sandPositions[i * 3 + 2] = Math.sin(spiralAng) * r;
+    }
+    sandGeo.setAttribute('position', new THREE.BufferAttribute(sandPositions, 3));
+    const sandStream = new THREE.Points(
+      sandGeo,
+      new THREE.PointsMaterial({ color: 0xffe484, size: 0.65, transparent: true, opacity: 0.9 })
+    );
+    southClepsydraGroup.add(sandStream);
+
+    // Monolithic Stone Tablets of Memory framing the Hourglass
+    const runicTex = createRunicTabletTexture();
+    const tabletMat = new THREE.MeshStandardMaterial({
+      map: runicTex,
+      emissive: 0xffcf56,
+      emissiveMap: runicTex,
+      emissiveIntensity: 0.85,
+      roughness: 0.35,
+      metalness: 0.6
+    });
+
+    for (let t = -2; t <= 2; t++) {
+      if (t === 0) continue;
+      const tablet = new THREE.Mesh(new THREE.BoxGeometry(8.5, 32, 1.4), tabletMat);
+      tablet.position.set(t * 14.5, Math.abs(t) * -3, -6);
+      tablet.rotation.y = -t * 0.18;
+      southClepsydraGroup.add(tablet);
+    }
+
+    const zenithGroup = new THREE.Group();
+    zenithGroup.position.set(0, 128, 0);
+    scene.add(zenithGroup);
+
+    const zenithRings = [];
+    for (let z = 0; z < 4; z++) {
+      const zRing = new THREE.Mesh(
+        new THREE.TorusGeometry(14 + z * 9, 0.65, 12, 64),
+        new THREE.MeshBasicMaterial({ color: 0xfff0b3, wireframe: z % 2 === 1 })
+      );
+      zRing.rotation.x = Math.PI * 0.5;
+      zenithGroup.add(zRing);
+      zenithRings.push(zRing);
+    }
+
+    // Volumetric God-Ray Cone pouring down from the Zenith Eye
+    const godRayCone = new THREE.Mesh(
+      new THREE.ConeGeometry(68, 210, 32, 1, true),
+      new THREE.MeshBasicMaterial({
+        color: 0xffdf73,
+        transparent: true,
+        opacity: 0.085,
+        side: THREE.DoubleSide,
+        depthWrite: false,
+        blending: THREE.AdditiveBlending
+      })
+    );
+    godRayCone.position.y = -95;
+    zenithGroup.add(godRayCone);
+
+    const soulCount = 3600;
+    const baseSoulGeo = new THREE.ConeGeometry(0.38, 2.2, 4);
+    const instancedSoulGeo = new THREE.InstancedBufferGeometry();
+    instancedSoulGeo.index = baseSoulGeo.index;
+    instancedSoulGeo.attributes.position = baseSoulGeo.attributes.position;
+
+    const orbitParams = new Float32Array(soulCount * 3);
+    const soulSeeds = new Float32Array(soulCount * 3);
+
+    for (let i = 0; i < soulCount; i++) {
+      const isAscending = i % 2 === 0 ? 1.0 : -1.0;
+      const baseRadius = 24 + Math.random() * 98;
+      const angleOffset = Math.random() * Math.PI * 2;
+      const speed = (0.35 + Math.random() * 0.75) * isAscending;
+
+      orbitParams[i * 3] = baseRadius;
+      orbitParams[i * 3 + 1] = angleOffset;
+      orbitParams[i * 3 + 2] = speed;
+
+      soulSeeds[i * 3] = Math.random() * 195.0; // height offset
+      soulSeeds[i * 3 + 1] = 0.8 + Math.random() * 2.4; // vertical elongation
+      soulSeeds[i * 3 + 2] = Math.random() * 6.28;
+    }
+
+    instancedSoulGeo.setAttribute('aOrbitParams', new THREE.InstancedBufferAttribute(orbitParams, 3));
+    instancedSoulGeo.setAttribute('aSoulSeed', new THREE.InstancedBufferAttribute(soulSeeds, 3));
+
+    const soulsUniforms = {
+      uTime: { value: 0 },
+      uGlobalExcitement: { value: 0 }
+    };
+
+    const soulsMesh = new THREE.Mesh(
+      instancedSoulGeo,
+      new THREE.ShaderMaterial({
+        vertexShader: SOULS_VERTEX_SHADER,
+        fragmentShader: SOULS_FRAGMENT_SHADER,
+        uniforms: soulsUniforms,
+        transparent: true,
+        depthWrite: false,
+        blending: THREE.AdditiveBlending,
+        side: THREE.DoubleSide
+      })
+    );
+    soulsMesh.frustumCulled = false;
+    scene.add(soulsMesh);
+
+    // Jagged Beksiński Ossuary Spires rising out of the Sea of Dark Mercury
+    const spireMat = new THREE.MeshStandardMaterial({
+      color: 0x160e1c,
+      emissive: 0x26090c,
+      roughness: 0.75,
+      metalness: 0.25
+    });
+    for (let s = 0; s < 28; s++) {
+      const ang = (s / 28) * Math.PI * 2 + 0.12;
+      const dist = 55 + (s % 4) * 32;
+      const h = 35 + (s % 5) * 16;
+      const spire = new THREE.Mesh(new THREE.ConeGeometry(2.5 + (s % 3), h, 5), spireMat);
+      spire.position.set(Math.cos(ang) * dist, -85 + h * 0.5, Math.sin(ang) * dist);
+      spire.rotation.z = ((s % 3) - 1) * 0.08;
+      scene.add(spire);
+    }
+
+    const raycaster = new THREE.Raycaster();
+
+    function registerMonumentGazeTarget({
+      id,
+      name,
+      position,
+      radius,
+      latinTitle,
+      englishSubtitle,
+      loreVerse,
+      billboardPos,
+      audioTheme
+    }) {
+      const collider = new THREE.Mesh(
+        new THREE.SphereGeometry(radius, 12, 12),
+        new THREE.MeshBasicMaterial({ visible: false })
+      );
+      collider.position.copy(position);
+      collider.userData = { id, name, audioTheme };
+      scene.add(collider);
+
+      const billboard = createInscriptionBillboard(latinTitle, englishSubtitle, loreVerse);
+      billboard.position.copy(billboardPos);
+      billboard.lookAt(0, 0, 0);
+      scene.add(billboard);
+
+      gazeTargets.push({
+        id,
+        name,
+        collider,
+        billboard,
+        audioTheme,
+        opacity: 0
+      });
+    }
+
+    // 1. North Lower: The Scales of Cosmic Judgment
+    registerMonumentGazeTarget({
+      id: 'scales',
+      name: 'LIBRA AETERNA // SCALES OF COSMIC WEIGHING',
+      position: new THREE.Vector3(0, 4, -80),
+      radius: 24,
+      latinTitle: 'LIBRA AETERNA',
+      englishSubtitle: 'The Scales of Cosmic Weighing',
+      loreVerse: '“A pulsing star of Grace weighed against the Singularity of Oblivion.”',
+      billboardPos: new THREE.Vector3(0, -5, -42),
+      audioTheme: 'scales'
+    });
+
+    // 2. North Upper: The Hyper-Seraph Ophanim Throne
+    registerMonumentGazeTarget({
+      id: 'ophanim',
+      name: 'THRONUS OPHANIM // THE HYPER-SERAPH',
+      position: new THREE.Vector3(0, 32, -92),
+      radius: 26,
+      latinTitle: 'THRONUS OPHANIM',
+      englishSubtitle: 'The Many-Eyed Wheels of Ezekiel',
+      loreVerse: '“Ten thousand sleepless eyes beholding every instant of mortal memory.”',
+      billboardPos: new THREE.Vector3(0, 22, -44),
+      audioTheme: 'ophanim'
+    });
+
+    // 3. East (+X): The Eastern Trumpeters of Automata
+    registerMonumentGazeTarget({
+      id: 'eastTrumpet',
+      name: 'TUBA MIRUM ORIENTIS // EASTERN TRUMPETERS',
+      position: new THREE.Vector3(92, 6, 0),
+      radius: 36,
+      latinTitle: 'TUBA MIRUM',
+      englishSubtitle: 'The Seven Brazen Trumpeters of the East',
+      loreVerse: '“The brazen horn shatters the sepulchers of time across the firmament.”',
+      billboardPos: new THREE.Vector3(44, 6, 0),
+      audioTheme: 'trumpet'
+    });
+
+    // 4. West (-X): The Western Cathedral of Bone & Horns
+    registerMonumentGazeTarget({
+      id: 'westTrumpet',
+      name: 'CATHEDRALIS OSSIUM // WESTERN HORNS',
+      position: new THREE.Vector3(-92, 6, 0),
+      radius: 36,
+      latinTitle: 'REX TREMENDAE',
+      englishSubtitle: 'The Western Cathedral of Bone & Automata',
+      loreVerse: '“When the final chord resounds, the stars themselves shall fall like figs.”',
+      billboardPos: new THREE.Vector3(-44, 6, 0),
+      audioTheme: 'trumpet'
+    });
+
+    // 5. South (+Z): The Shattered Clepsydra of Eternity
+    registerMonumentGazeTarget({
+      id: 'clepsydra',
+      name: 'CLEPSYDRA AETERNITATIS // SHATTERED HOURGLASS',
+      position: new THREE.Vector3(0, 12, 92),
+      radius: 32,
+      latinTitle: 'MORS STUPEBIT',
+      englishSubtitle: 'The Shattered Clepsydra & Gates of Memory',
+      loreVerse: '“Death and Nature stand aghast as the sands of duration freeze in flight.”',
+      billboardPos: new THREE.Vector3(0, 8, 44),
+      audioTheme: 'clepsydra'
+    });
+
+    // 6. Zenith (+Y): The Eye of the Empyrean
+    registerMonumentGazeTarget({
+      id: 'zenith',
+      name: 'ROSA EMPYREA // EYE OF THE ZENITH',
+      position: new THREE.Vector3(0, 115, 0),
+      radius: 46,
+      latinTitle: 'LUX PERPETUA',
+      englishSubtitle: 'The Fractal Rose of the Empyrean',
+      loreVerse: '“Love that moves the sun and the other stars pours down in shafts of gold.”',
+      billboardPos: new THREE.Vector3(0, 38, -14),
+      audioTheme: 'zenith'
+    });
+
+    // 7. Nadir (-Y): The Maw of Gehenna
+    registerMonumentGazeTarget({
+      id: 'nadir',
+      name: 'VORAGO GEHENNAE // SEA OF DARK MERCURY',
+      position: new THREE.Vector3(0, -85, 0),
+      radius: 44,
+      latinTitle: 'LACRIMOSA DIES',
+      englishSubtitle: 'The Sea of Dark Mercury & Maw of Gehenna',
+      loreVerse: '“Beneath the Sigil of Glass swirls the heavy tide of unremembered ages.”',
+      billboardPos: new THREE.Vector3(0, -34, -14),
+      audioTheme: 'nadir'
+    });
+
+    const zee = new THREE.Vector3(0, 0, 1);
+    const euler = new THREE.Euler();
+    const q0 = new THREE.Quaternion();
+    const q1 = new THREE.Quaternion(-Math.sqrt(0.5), 0, 0, Math.sqrt(0.5)); // -PI/2 around X
+
+    function setObjectQuaternion(quaternion, alpha, beta, gamma, orient) {
+      euler.set(beta, alpha, -gamma, 'YXZ');
+      quaternion.setFromEuler(euler);
+      quaternion.multiply(q1);
+      quaternion.multiply(q0.setFromAxisAngle(zee, -orient));
+    }
+
+    function onDeviceOrientation(event) {
+      if (event.alpha === null || event.beta === null || event.gamma === null) return;
+      STATE.gyroAvailable = true;
+      STATE.lastDeviceAlpha = THREE.MathUtils.degToRad(event.alpha);
+      STATE.lastDeviceBeta = THREE.MathUtils.degToRad(event.beta);
+      STATE.lastDeviceGamma = THREE.MathUtils.degToRad(event.gamma);
+
+      if (!STATE.hasInitialGyro) {
+        STATE.gyroYawOffset = -STATE.lastDeviceAlpha;
+        STATE.hasInitialGyro = true;
+      }
+    }
+
+    function updateScreenOrientation() {
+      const angle = (screen.orientation && screen.orientation.angle !== undefined)
+        ? screen.orientation.angle
+        : (window.orientation || 0);
+      STATE.screenOrientationAngle = THREE.MathUtils.degToRad(angle);
+    }
+    window.addEventListener('orientationchange', updateScreenOrientation);
+    updateScreenOrientation();
+
+    async function requestGyroPermissionAndStart(enableStereo) {
+      STATE.started = true;
+      STATE.stereoMode = enableStereo;
+
+      // Request iOS 13+ DeviceOrientation Permission if available
+      if (
+        typeof DeviceOrientationEvent !== 'undefined' &&
+        typeof DeviceOrientationEvent.requestPermission === 'function'
+      ) {
+        try {
+          const response = await DeviceOrientationEvent.requestPermission();
+          if (response === 'granted') {
+            STATE.gyroPermissionGranted = true;
+            window.addEventListener('deviceorientation', onDeviceOrientation, true);
+          }
+        } catch (err) {
+          console.warn('DeviceOrientation permission fallback to touch/mouse drag:', err);
+        }
+      } else {
+        window.addEventListener('deviceorientation', onDeviceOrientation, true);
+      }
+
+      // Request Fullscreen & Screen WakeLock for Cardboard headsets
+      try {
+        const docEl = document.documentElement;
+        if (docEl.requestFullscreen) {
+          await docEl.requestFullscreen();
+        } else if (docEl.webkitRequestFullscreen) {
+          await docEl.webkitRequestFullscreen();
+        }
+      } catch (e) {
+        // Ignore if blocked in iframe
+      }
+
+      if ('wakeLock' in navigator) {
+        try {
+          await navigator.wakeLock.request('screen');
+        } catch (e) {
+          // Ignore wakeLock errors
+        }
+      }
+
+      audioEngine.init();
+      applyStereoModeUI();
+      document.getElementById('entry-modal').classList.add('hidden-modal');
+      document.getElementById('top-bar').classList.remove('opacity-0');
+      showHudTemporarily();
+    }
+
+    function applyStereoModeUI() {
+      const stereoOverlay = document.getElementById('stereo-overlay');
+      const modeLabel = document.getElementById('hud-mode-label');
+      if (STATE.stereoMode) {
+        stereoOverlay.classList.add('active');
+        modeLabel.textContent = 'MODE: STEREO VR';
+      } else {
+        stereoOverlay.classList.remove('active');
+        modeLabel.textContent = 'MODE: MONO 360°';
+      }
+      onWindowResize();
+    }
+
+    function showHudTemporarily() {
+      const hud = document.getElementById('vr-hud');
+      hud.classList.remove('hud-hidden');
+      STATE.hudVisible = true;
+      if (STATE.hudTimeout) clearTimeout(STATE.hudTimeout);
+      STATE.hudTimeout = setTimeout(() => {
+        hud.classList.add('hud-hidden');
+        STATE.hudVisible = false;
+      }, 5500);
+    }
+
+    // Pointer / Touch Drag Look & Tap to Toggle HUD
+    renderer.domElement.addEventListener('pointerdown', (e) => {
+      STATE.isPointerDown = true;
+      STATE.pointerStartX = e.clientX;
+      STATE.pointerStartY = e.clientY;
+      STATE.pointerMovedDistance = 0;
+    });
+
+    window.addEventListener('pointermove', (e) => {
+      if (!STATE.isPointerDown) return;
+      const dx = e.clientX - STATE.pointerStartX;
+      const dy = e.clientY - STATE.pointerStartY;
+      STATE.pointerMovedDistance += Math.hypot(dx, dy);
+      STATE.pointerStartX = e.clientX;
+      STATE.pointerStartY = e.clientY;
+
+      STATE.targetYaw -= dx * 0.0042;
+      STATE.targetPitch = Math.max(
+        -Math.PI * 0.48,
+        Math.min(Math.PI * 0.48, STATE.targetPitch - dy * 0.0042)
+      );
+    });
+
+    window.addEventListener('pointerup', () => {
+      if (STATE.isPointerDown && STATE.pointerMovedDistance < 10 && STATE.started) {
+        showHudTemporarily();
+      }
+      STATE.isPointerDown = false;
+    });
+
+    // Scroll-wheel FOV Zoom for desktop inspection
+    window.addEventListener('wheel', (e) => {
+      STATE.fov = Math.max(42, Math.min(95, STATE.fov + e.deltaY * 0.03));
+      mainCamera.fov = STATE.fov;
+      mainCamera.updateProjectionMatrix();
+    }, { passive: true });
+
+    // Keyboard shortcuts ('H' for HUD, 'V' for Stereo toggle, 'R' for Recenter, Arrow keys to look)
+    window.addEventListener('keydown', (e) => {
+      const key = e.key.toLowerCase();
+      if (key === 'h') {
+        showHudTemporarily();
+      } else if (key === 'v') {
+        STATE.stereoMode = !STATE.stereoMode;
+        applyStereoModeUI();
+        showHudTemporarily();
+      } else if (key === 'r') {
+        recenterView();
+      } else if (e.key === 'ArrowLeft') {
+        STATE.targetYaw += 0.12;
+      } else if (e.key === 'ArrowRight') {
+        STATE.targetYaw -= 0.12;
+      } else if (e.key === 'ArrowUp') {
+        STATE.targetPitch = Math.min(Math.PI * 0.48, STATE.targetPitch + 0.1);
+      } else if (e.key === 'ArrowDown') {
+        STATE.targetPitch = Math.max(-Math.PI * 0.48, STATE.targetPitch - 0.1);
+      }
+    });
+
+    function recenterView() {
+      STATE.targetYaw = 0;
+      STATE.targetPitch = 0.06;
+      STATE.yaw = 0;
+      STATE.pitch = 0.06;
+      if (STATE.gyroAvailable) {
+        STATE.gyroYawOffset = -STATE.lastDeviceAlpha;
+      }
+      showHudTemporarily();
+    }
+
+    function downloadSingleFileHTML() {
+      const htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+      const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'index.html';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    // Bind UI Buttons
+    document.getElementById('btn-enter-vr').addEventListener('click', () => {
+      requestGyroPermissionAndStart(true);
+    });
+
+    document.getElementById('btn-enter-mono').addEventListener('click', () => {
+      requestGyroPermissionAndStart(false);
+    });
+
+    document.getElementById('btn-download-entry').addEventListener('click', downloadSingleFileHTML);
+    document.getElementById('hud-btn-download').addEventListener('click', downloadSingleFileHTML);
+
+    document.getElementById('hud-btn-mode').addEventListener('click', () => {
+      STATE.stereoMode = !STATE.stereoMode;
+      applyStereoModeUI();
+      showHudTemporarily();
+    });
+
+    document.getElementById('hud-ipd-slider').addEventListener('input', (e) => {
+      updateIPD(parseInt(e.target.value, 10));
+      showHudTemporarily();
+    });
+
+    document.getElementById('hud-btn-recenter').addEventListener('click', recenterView);
+
+    document.getElementById('hud-btn-audio').addEventListener('click', (e) => {
+      const active = audioEngine.toggleMute();
+      e.currentTarget.textContent = active ? 'Audio: ON' : 'Audio: MUTED';
+      showHudTemporarily();
+    });
+
+    document.getElementById('hud-btn-horn').addEventListener('click', () => {
+      audioEngine.playDiesIraeMotif('trumpet');
+      STATE.monumentAwakenings.eastTrumpet = 1.0;
+      STATE.monumentAwakenings.westTrumpet = 1.0;
+      showHudTemporarily();
+    });
+
+    document.getElementById('hud-btn-fs').addEventListener('click', () => {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen?.();
+      } else {
+        document.exitFullscreen?.();
+      }
+      showHudTemporarily();
+    });
+
+    function onWindowResize() {
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      renderer.setSize(w, h);
+
+      mainCamera.aspect = w / h;
+      mainCamera.updateProjectionMatrix();
+
+      eyeCameraL.aspect = (w * 0.5) / h;
+      eyeCameraL.updateProjectionMatrix();
+      eyeCameraR.aspect = (w * 0.5) / h;
+      eyeCameraR.updateProjectionMatrix();
+    }
+    window.addEventListener('resize', onWindowResize);
+
+    const clock = new THREE.Clock();
+    const statusTextEl = document.getElementById('gaze-status-text');
+
+    function animate() {
+      requestAnimationFrame(animate);
+
+      const dt = Math.min(clock.getDelta(), 0.1);
+      const elapsed = clock.getElapsedTime();
+
+      // Update GLSL Shader Uniforms
+      skyUniforms.uTime.value = elapsed;
+      seaUniforms.uTime.value = elapsed;
+      soulsUniforms.uTime.value = elapsed;
+
+      // Decay monument awakening intensities smoothly
+      let totalExcitement = 0;
+      for (const key in STATE.monumentAwakenings) {
+        STATE.monumentAwakenings[key] = Math.max(0, STATE.monumentAwakenings[key] - dt * 0.25);
+        totalExcitement += STATE.monumentAwakenings[key];
+      }
+      soulsUniforms.uGlobalExcitement.value = Math.min(1.5, totalExcitement);
+      skyUniforms.uZenithAwaken.value = STATE.monumentAwakenings.zenith;
+      skyUniforms.uNadirAwaken.value = STATE.monumentAwakenings.nadir;
+      seaUniforms.uNadirAwaken.value = STATE.monumentAwakenings.nadir;
+
+      // 1. Animate North Ophanim Rings & The Scales of Cosmic Judgment
+      const ophanimBoost = 1.0 + STATE.monumentAwakenings.ophanim * 3.5;
+      ophanimRings.forEach((ring, idx) => {
+        const dir = idx % 2 === 0 ? 1 : -1;
+        ring.rotation.x += dt * 0.22 * dir * ophanimBoost;
+        ring.rotation.y += dt * 0.31 * (idx + 1) * 0.35 * ophanimBoost;
+        ring.rotation.z += dt * 0.15 * dir * ophanimBoost;
+      });
+      polyHalo.rotation.y -= dt * 0.45 * ophanimBoost;
+      polyHalo.rotation.x += dt * 0.25 * ophanimBoost;
+      coreSpire.position.y = Math.sin(elapsed * 1.6) * 1.4;
+
+      // Scales of Judgment tipping motion
+      const scalesBoost = 1.0 + STATE.monumentAwakenings.scales * 2.5;
+      const tipAngle = Math.sin(elapsed * 0.75) * 0.22 + Math.sin(elapsed * 2.8) * 0.18 * STATE.monumentAwakenings.scales;
+      balanceBeamGroup.rotation.z = tipAngle;
+      // Keep hanging pans vertical while the beam tips
+      leftPanGroup.rotation.z = -tipAngle;
+      rightPanGroup.rotation.z = -tipAngle;
+
+      const starPulse = 1.0 + Math.sin(elapsed * 4.2) * 0.12 + STATE.monumentAwakenings.scales * 0.35;
+      starOfGrace.scale.setScalar(starPulse);
+      starCorona.rotation.y += dt * 1.2 * scalesBoost;
+      accretionDisk.rotation.z -= dt * 2.4 * scalesBoost;
+
+      // 2. Animate East & West Brazen Trumpeters Sonic Shockwaves
+      const animateShockwaves = (flankObj, boostVal) => {
+        const speed = 0.45 + boostVal * 1.1;
+        flankObj.shockwaves.forEach((sw) => {
+          sw.phase = (sw.phase + dt * speed) % 1.0;
+          const s = 1.0 + sw.phase * (5.5 + boostVal * 4.5);
+          sw.mesh.scale.setScalar(s);
+          sw.mesh.position.y = 32 + sw.phase * 28;
+          sw.mesh.material.opacity = (1.0 - sw.phase) * (0.65 + boostVal * 0.35);
+        });
+      };
+      animateShockwaves(eastTrumpeters, STATE.monumentAwakenings.eastTrumpet);
+      animateShockwaves(westTrumpeters, STATE.monumentAwakenings.westTrumpet);
+
+      // 3. Animate South Shattered Clepsydra of Eternity
+      const clepsydraBoost = 1.0 - STATE.monumentAwakenings.clepsydra * 2.6; // Reverses time flow when awakened!
+      sandStream.rotation.y += dt * 0.45 * clepsydraBoost;
+      clepsydraRings.forEach((gear, idx) => {
+        gear.rotation.z += dt * (idx % 2 === 0 ? 0.3 : -0.45) * clepsydraBoost;
+        gear.rotation.x = Math.sin(elapsed * 0.5 + idx) * 0.22;
+      });
+
+      // 4. Animate Zenith Eye of the Empyrean & Perch Sigil
+      const zenithBoost = 1.0 + STATE.monumentAwakenings.zenith * 2.5;
+      zenithRings.forEach((zr, idx) => {
+        zr.rotation.z += dt * (idx % 2 === 0 ? 0.25 : -0.35) * zenithBoost;
+      });
+      godRayCone.material.opacity = 0.08 + Math.sin(elapsed * 1.5) * 0.02 + STATE.monumentAwakenings.zenith * 0.12;
+      sigilStar1.rotation.z += dt * 0.15;
+      sigilStar2.rotation.z -= dt * 0.15;
+
+      // 5. Update Camera Orientation (Hybrid Gyroscope + Smooth Pointer Drag)
+      if (!STATE.started) {
+        // Gentle orbital preview before the user clicks Enter
+        STATE.targetYaw = elapsed * 0.12;
+        STATE.targetPitch = Math.sin(elapsed * 0.35) * 0.18 + 0.08;
+      }
+
+      STATE.yaw += (STATE.targetYaw - STATE.yaw) * 0.12;
+      STATE.pitch += (STATE.targetPitch - STATE.pitch) * 0.12;
+
+      if (STATE.gyroAvailable && STATE.started) {
+        setObjectQuaternion(
+          mainCamera.quaternion,
+          STATE.lastDeviceAlpha + STATE.gyroYawOffset + STATE.yaw,
+          STATE.lastDeviceBeta,
+          STATE.lastDeviceGamma,
+          STATE.screenOrientationAngle
+        );
+      } else {
+        mainCamera.rotation.order = 'YXZ';
+        mainCamera.rotation.y = STATE.yaw;
+        mainCamera.rotation.x = STATE.pitch;
+        mainCamera.rotation.z = 0;
+      }
+
+      // Modulate Generative Pipe Organ Filter by Camera Pitch
+      const forwardDir = new THREE.Vector3(0, 0, -1).applyQuaternion(mainCamera.quaternion);
+      const currentPitchRad = Math.asin(Math.max(-1, Math.min(1, forwardDir.y)));
+      audioEngine.updateByGazePitch(currentPitchRad);
+
+      // 6. Gaze-Based Reticle Raycasting against the 7 Esoteric Monuments
+      if (STATE.started) {
+        raycaster.setFromCamera(new THREE.Vector2(0, 0), mainCamera);
+        const colliders = gazeTargets.map((t) => t.collider);
+        const hits = raycaster.intersectObjects(colliders, false);
+
+        if (hits.length > 0) {
+          const hitData = hits[0].object.userData;
+          reticleDiamond.rotation.z += dt * 3.2;
+          reticleOuter.scale.setScalar(1.25);
+
+          if (STATE.currentGazeId !== hitData.id) {
+            STATE.currentGazeId = hitData.id;
+            STATE.gazeHoldTime = 0;
+            STATE.gazeTriggeredId = null;
+          } else {
+            STATE.gazeHoldTime += dt;
+            const progress = Math.min(1.0, STATE.gazeHoldTime / 1.0);
+            updateReticleProgress(progress);
+
+            if (progress >= 1.0 && STATE.gazeTriggeredId !== hitData.id) {
+              STATE.gazeTriggeredId = hitData.id;
+              STATE.monumentAwakenings[hitData.id] = 1.0;
+              audioEngine.playDiesIraeMotif(hitData.audioTheme);
+              statusTextEl.textContent = `${hitData.name} // AWAKENED`;
+            } else if (progress < 1.0) {
+              statusTextEl.textContent = `GAZING: ${hitData.name} (${Math.round(progress * 100)}%)`;
+            }
+          }
+        } else {
+          STATE.currentGazeId = null;
+          STATE.gazeHoldTime = Math.max(0, STATE.gazeHoldTime - dt * 2.5);
+          updateReticleProgress(STATE.gazeHoldTime);
+          reticleOuter.scale.setScalar(1.0);
+          reticleDiamond.rotation.z += dt * 0.5;
+          statusTextEl.textContent = 'SANCTUM SIGIL // GAZE TO AWAKEN MONUMENTS';
+        }
+
+        // Smoothly fade 3D Latin/English floating inscriptions in and out
+        gazeTargets.forEach((target) => {
+          const isFocused = STATE.currentGazeId === target.id && STATE.gazeHoldTime > 0.35;
+          const isAwakened = STATE.monumentAwakenings[target.id] > 0.15;
+          const targetOpacity = (isFocused || isAwakened) ? 0.96 : 0.0;
+          target.opacity += (targetOpacity - target.opacity) * dt * 4.5;
+          target.billboard.material.opacity = target.opacity;
+          target.billboard.visible = target.opacity > 0.01;
+        });
+      }
+
+      // 7. Render Either Stereoscopic Side-By-Side (Cardboard VR) or Single Viewport (Immersive Mono)
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+
+      if (STATE.stereoMode) {
+        renderer.setScissorTest(true);
+
+        // Left Eye Viewport
+        renderer.setViewport(0, 0, w * 0.5, h);
+        renderer.setScissor(0, 0, w * 0.5, h);
+        renderer.render(scene, eyeCameraL);
+
+        // Right Eye Viewport
+        renderer.setViewport(w * 0.5, 0, w * 0.5, h);
+        renderer.setScissor(w * 0.5, 0, w * 0.5, h);
+        renderer.render(scene, eyeCameraR);
+
+        renderer.setScissorTest(false);
+      } else {
+        renderer.setViewport(0, 0, w, h);
+        renderer.render(scene, mainCamera);
+      }
+    }
+
+    window.onload = function () {
+      onWindowResize();
+      animate();
+    };
+  </script>
+
+</body></html>
